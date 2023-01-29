@@ -1,0 +1,40 @@
+.container{
+    height: 100vh;
+    background-color: transparent;
+    background: url(https://cdn.pixabay.com/photo/2016/08/02/07/45/the-polygon-1562743_960_720.jpg) repeat-y center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+}
+.rounded-pill{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card{
+    width:400px;
+    background-color: transparent;
+    margin: auto;
+    border: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+h3{
+    display: flex;
+    justify-content: flex-end;
+}
+.close-icon{
+    cursor: pointer;
+    transition: transform 4s;
+}
+.close-icon:hover{
+    transform: rotate(720deg);
+}
+a{
+    background-color:rgb(17, 0, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+a:hover{
+    background-color:rgb(77, 68, 202);
+}

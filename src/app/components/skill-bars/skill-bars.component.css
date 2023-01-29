@@ -1,0 +1,19 @@
+#background{
+    background-color: transparent;
+    background: url(https://cdn.pixabay.com/photo/2016/08/02/07/45/the-polygon-1562743_960_720.jpg) repeat-y center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#skill-set{
+    border: 1px;
+    border-radius: 30px;
+    border-color: black;
+    margin: 100px;
+    padding: 10px;
+}
+h3{
+    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+    color:white;
+}

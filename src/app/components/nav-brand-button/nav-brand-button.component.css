@@ -1,0 +1,11 @@
+.rounded-pill{
+    width: 40px;
+    height: 40px;
+    transition: width 2s, height 2s, transform 4s;
+}
+.rounded-pill:hover{
+    width: 120px;
+    height: 120px;
+    transform: rotate(720deg);
+    cursor: pointer;
+}

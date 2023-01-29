@@ -1,7 +1,7 @@
 {
-    "tasks": [
+    "projects": [
       {
-        "text": "repasar Angular",
+        "name": "",
         "day": "todos los días, a las 7:00",
         "reminder": true,
         "id": 3
