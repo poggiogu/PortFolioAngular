@@ -1,0 +1,12 @@
+<!--<app-experiences-header id="head"></app-experiences-header>-->
+<div class="container">
+    <app-add-exp
+        (onAddExp) = "addExp($event)"
+    ></app-add-exp>
+    <app-exp-item 
+        *ngFor="let exp of exps"
+        [exp] = "exp"
+        (onDeleteExp)="deleteExp(exp)"
+    ></app-exp-item>
+</div>
+

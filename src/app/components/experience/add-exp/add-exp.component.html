@@ -1,0 +1,39 @@
+<form 
+    class="add-form"   
+    (ngSubmit)="onSubmit()"
+    *ngIf="showAddExp">
+    <div class="form-control">
+        <label for="text">Company Name</label>
+        <input 
+            type="text" 
+            name="text" 
+            id="text" 
+            placeholder="'Company Name'" 
+            [(ngModel)] = "text"
+        />
+    </div>
+
+    <div class="form-control">
+        <label for="day">Since when untill when?</label>
+        <input 
+            type="text" 
+            name="dates" 
+            id="dates" 
+            placeholder="'December 2021 untill today...'"
+            [(ngModel)] = "dates"
+        />
+    </div>
+
+    <div class="form-control">
+        <label for="reminder">Company Logo Url</label>
+        <input 
+            type="text" 
+            name="brandLogoUrl"
+            id="logo"
+            placeholder="'https://www...'"
+            [(ngModel)] = "brandLogoUrl"
+        />
+    </div>
+    <input type="submit" value="Save Exp" class="btn btn-block btn-dark">
+</form>
+

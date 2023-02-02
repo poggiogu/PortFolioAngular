@@ -1,58 +1,25 @@
 {
-    "projects": [
-      {
-        "name": "",
-        "day": "todos los días, a las 7:00",
-        "reminder": true,
-        "id": 3
-      },
-      {
-        "text": "investigar método Subscribe",
-        "day": "cuando pueda",
-        "reminder": true,
-        "id": 4
-      },
-      {
-        "text": "agregar limpieza de formulario",
-        "day": "cu",
-        "reminder": true,
-        "id": 5
-      },
-      {
-        "text": "agregar limpieza de formulario",
-        "day": "cuando pueda",
-        "reminder": true,
-        "id": 6
-      },
-      {
-        "text": "agregar drag and drop",
-        "day": "cuando pueda",
-        "reminder": true,
-        "id": 7
-      },
-      {
-        "text": "agregar drag and drop",
-        "day": "cuando pueda",
-        "reminder": true,
-        "id": 8
-      },
-      {
-        "text": "cambiar day time a formulario de tipo fecha",
-        "day": "cuando pueda",
-        "reminder": true,
-        "id": 9
-      },
-      {
-        "text": "cambiar day time a formulario de tipo fecha",
-        "day": "cuando pueda",
-        "reminder": true,
-        "id": 10
-      },
-      {
-        "text": "llevar caja estanca a obra de Amancay",
-        "day": "sábado 21 de enero, a las 8:00",
-        "reminder": true,
-        "id": 11
-      }
-    ]
-  }
+  "exps": [
+    {
+      "text": "Henisa S.A",
+      "dates": "February 2021 to December 2022",
+      "brandLogoUrl": "https://ii.ct-stc.com/5/logos/empresas/2016/12/27/6580d460500642faa2cethumbnail.jpeg",
+      "id": 2
+    },
+    {
+      "text": "Nucleoeléctrica Argentina S.A.",
+      "dates": "March 2022 to December 2022",
+      "brandLogoUrl": "http://chilicote.com.ar/wp-content/uploads/2019/04/nasa-logo.png",
+      "id": 4
+    },
+    {
+      "text": "Capital One Credit Card",
+      "dates": "February 2006 to December 2009",
+      "brandLogoUrl": "https://www.pngfind.com/pngs/m/213-2137829_212-888-capital-one-bank-logo-hd-png.png",
+      "id": 5
+    }
+  ],
+  "Edus": [
+    {}
+  ]
+}

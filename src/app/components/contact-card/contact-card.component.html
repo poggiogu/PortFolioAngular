@@ -1,11 +1,11 @@
 <!--este elemento div fue seteado para cumplir la función de un jumbotron-->
 <div class="container">
-  <div class="card bg-transparent">
+  <div class="card">
       <h3>
-        <fa-icon class="close-icon"
-            [icon]="faTimes"
-            [ngStyle] = "{'color':'black'}">
-        </fa-icon>
+        <a routerLink="/" id="close-icon">
+          <fa-icon [icon]="faTimes" [ngStyle] = "{'color':'black'}">    
+          </fa-icon>
+        </a>  
       </h3>
       <img  
         class="card-img-top rounded-pill"
@@ -31,3 +31,4 @@
       </div>
   </div>
 </div>
+

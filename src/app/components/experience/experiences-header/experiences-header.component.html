@@ -1,0 +1,11 @@
+<header>
+    <h3>{{title}}</h3>
+    <app-experiences-header-button 
+    color = "{{showAddExp ? 'red' : 'black'}}"
+    text = "{{showAddExp ? 'Close' : 'Add a Workplace'}}"
+    (btnClick)="toggleAddExp()"
+    ></app-experiences-header-button>    
+</header>
+
+
+

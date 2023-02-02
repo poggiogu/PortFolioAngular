@@ -1,0 +1,15 @@
+<div class="exp-item">   
+<img [src]="exp.brandLogoUrl" style="width:50px" alt="Company Logo" >
+    <div class="container">
+        <h4>
+            {{exp.text}}
+            <fa-icon 
+                [icon]="faTimes"
+                [ngStyle] = "{'color':'black'}"
+                (click) = "onDelete(exp)">
+            </fa-icon>
+        </h4>
+        <p>{{exp.dates}}</p>
+    </div>
+</div>
+

@@ -14,11 +14,13 @@
     text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
     color:white;
 }
-.carousel-control-prev:hover{
+.btn-contrl{
+    opacity:0;
+    transition: opacity 2s;
+}
+.btn-control:hover{
     background-color: rgb(43, 43, 43);
     opacity: 0.2;
+    cursor:pointer;
 }
-.carousel-control-next:hover{
-    background-color: rgb(43, 43, 43);
-    opacity: 0.2;
-}
+
