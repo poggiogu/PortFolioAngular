@@ -1,0 +1,15 @@
+<div class="edu-item">   
+    <img [src]="edu.instLogoUrl" style="width:50px" alt="institution logo" >
+        <div class="container">
+            <h4>
+                {{edu.title}}
+                <fa-icon 
+                    [icon]="faTimes"
+                    [ngStyle] = "{'color':'black'}"
+                    (click) = "onDelete(edu)">
+                </fa-icon>
+            </h4>
+            <p>{{edu.course}}<span> in {{edu.year}}</span></p>
+        </div>
+    </div>
+    

@@ -18,5 +18,4 @@ export class ExperiencesHeaderButtonComponent {
   onClick() {
     this.btnClick.emit();
   }
-
 }

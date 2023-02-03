@@ -19,7 +19,28 @@
       "id": 5
     }
   ],
-  "Edus": [
-    {}
+  "edus": [
+    {
+      "title": "Udacity",
+      "course": "data scrapping with python" ,
+      "year": "2018",
+      "instLogoUrl": "https://speedlux.com/wp-content/uploads/2016/10/udacity-logo-280x147.png",
+      "id": 1
+    },
+    {
+      "title": "Udacity",
+      "course": "linear algebra" ,
+      "year": "2018",
+      "instLogoUrl": "https://speedlux.com/wp-content/uploads/2016/10/udacity-logo-280x147.png",
+      "id": 2
+    },
+    {
+      "title": "Argentina Progragma",
+      "course": "se_programar" ,
+      "year": "2021",
+      "instLogoUrl": "https://cdn-sp.radionacional.com.ar/wp-content/uploads/2021/12/Diseno-sin-titulo-1-1.png",
+      "id": 3
+    }
+
   ]
 }

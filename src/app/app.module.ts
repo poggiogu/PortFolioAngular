@@ -11,7 +11,6 @@ import { NavBrandButtonComponent } from './components/nav-brand-button/nav-brand
 import { ContactCardComponent } from './components/contact-card/contact-card.component';
 import { CarrouselComponent } from './components/carrousel/carrousel.component';
 import { SkillBarsComponent } from './components/skill-bars/skill-bars.component';
-import { FormacionComponent } from './components/formacion/formacion.component';
 import { Error404Component } from './components/error404/error404.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { IntroComponent } from './components/intro/intro.component';
@@ -23,11 +22,21 @@ import { ExperiencesHeaderComponent } from './components/experience/experiences-
 import { ExperiencesHeaderButtonComponent } from './components/experience/experiences-header-button/experiences-header-button.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { WorkEduComponent } from './components/work-edu/work-edu.component';
+import { EduComponent } from './components/education/edu/edu.component';
+import { EduItemComponent } from './components/education/edu-item/edu-item.component';
+import { AddEduComponent } from './components/education/add-edu/add-edu.component';
+import { EducationHeaderComponent } from './components/education/education-header/education-header.component';
+import { EducationHeaderButtonComponent } from './components/education/education-header-button/education-header-button.component';
+import { SorryComponent } from './components/sorry/sorry.component';
 
 const appRoutes: Routes = [
   {path: '', component : PortfolioComponent},
   {path: 'card', component : ContactCardComponent},
   {path: 'about', component : AboutComponent},
+  {path: 'projects', component: CarrouselComponent},
+  {path: 'skills', component: SkillBarsComponent},
+  {path: 'exp', component: WorkEduComponent},
+  {path: 'sorry', component: SorryComponent},
   {path: '**', component: Error404Component}
 ]
 
@@ -39,7 +48,6 @@ const appRoutes: Routes = [
     ContactCardComponent,
     CarrouselComponent,
     SkillBarsComponent,
-    FormacionComponent,
     Error404Component,
     FooterComponent,
     IntroComponent,
@@ -50,7 +58,13 @@ const appRoutes: Routes = [
     ExperiencesHeaderComponent,
     ExperiencesHeaderButtonComponent,
     PortfolioComponent,
-    WorkEduComponent
+    WorkEduComponent,
+    EduComponent,
+    EduItemComponent,
+    AddEduComponent,
+    EducationHeaderComponent,
+    EducationHeaderButtonComponent,
+    SorryComponent
   ],
   imports: [
     BrowserModule,

@@ -17,6 +17,8 @@
     padding-right: 10px;
     padding-top: 60px;
     padding-bottom: 40px;
+    color:white;
+    text-shadow: 1px 1px 5px black, 0 0 25px black, 0 0 5px black;
 }
 .rounded-pill{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

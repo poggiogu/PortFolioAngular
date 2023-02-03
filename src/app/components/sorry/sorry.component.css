@@ -1,0 +1,47 @@
+.btn{
+    width:100%;
+    background-color: black;
+    opacity: 0.7;
+    color: white;
+    box-shadow: 1px 4px 25px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 100px;
+}
+.btn:hover{
+    cursor:pointer;
+    transform:scale(0.98);
+}
+.btn:active{
+    transform:scale(0.94);   
+}
+#back{
+    height: 100vh;
+    min-width:100vw;
+    padding-top: 170px;
+    padding-bottom: 200px;
+    background-color: transparent;
+    background: url(https://cdn.pixabay.com/photo/2016/08/02/07/45/the-polygon-1562743_960_720.jpg) repeat-y center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+} 
+#front{
+    max-width: 400px;
+    background-color: transparent;    
+    box-shadow: 1px 4px 25px 0 rgba(0, 0, 0, 0.2);
+    margin: auto;
+    border: 0px;
+    border-radius: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+h1{
+    color: black;
+    text-shadow: 1px 1px 5px White, 0 0 25px white, 0 0 5px white;
+}
+h2{
+    color: white;
+    text-shadow: 1px 1px 5px black, 0 0 25px black, 0 0 5px black;
+}

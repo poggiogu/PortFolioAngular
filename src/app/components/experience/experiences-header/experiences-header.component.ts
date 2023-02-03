@@ -31,5 +31,4 @@ export class ExperiencesHeaderComponent {
   hasRoute(route:String) {
     return this.router.url === route;
   }
-
 }

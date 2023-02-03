@@ -1,0 +1,8 @@
+<header>
+    <h3>{{title}}</h3>
+    <app-education-header-button 
+    color = "{{showAddEdu ? 'red' : 'black'}}"
+    text = "{{showAddEdu ? 'Close' : 'Add a Course or Degree'}}"
+    (btnClick)="toggleAddEdu()"
+    ></app-education-header-button>    
+</header>

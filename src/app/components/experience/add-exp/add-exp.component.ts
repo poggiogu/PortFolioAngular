@@ -45,5 +45,6 @@ export class AddExpComponent {
     const newExp = {text, dates, brandLogoUrl, id};
 
     this.onAddExp.emit(newExp)
+
   }
 }
