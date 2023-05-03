@@ -4,7 +4,12 @@
             <h4>
                 {{edu.title}}
                 <fa-icon 
-                    [icon]="faTimes"
+                    [icon]= "faPencil"
+                    [ngStyle] = "{'color':'black'}"
+                    >
+                </fa-icon>
+                <fa-icon 
+                    [icon]= "faTrash"
                     [ngStyle] = "{'color':'black'}"
                     (click) = "onDelete(edu)">
                 </fa-icon>
@@ -12,4 +17,3 @@
             <p>{{edu.course}}<span> in {{edu.year}}</span></p>
         </div>
     </div>
-    

@@ -1,7 +1,8 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Edu } from 'src/app/Edu';
-import { faTimes } from '@fortawesome/free-solid-svg-icons'; 
 import { EDUS } from 'src/app/MockExp';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import { faPencil } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-edu-item',
@@ -13,7 +14,9 @@ export class EduItemComponent implements OnInit {
   @Input() edu:Edu = EDUS[0];
   @Output() onDeleteEdu : EventEmitter<Edu> = new EventEmitter()
 
-  faTimes = faTimes;
+  faTrash = faTrash;
+  faPencil = faPencil;
+
 
   constructor () {}; 
 

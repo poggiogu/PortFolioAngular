@@ -4,11 +4,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { NavBrandButtonComponent } from './components/nav-brand-button/nav-brand-button.component';
-import { ContactCardComponent } from './components/contact-card/contact-card.component';
 import { CarrouselComponent } from './components/carrousel/carrousel.component';
 import { SkillBarsComponent } from './components/skill-bars/skill-bars.component';
 import { Error404Component } from './components/error404/error404.component';
@@ -28,16 +28,22 @@ import { AddEduComponent } from './components/education/add-edu/add-edu.componen
 import { EducationHeaderComponent } from './components/education/education-header/education-header.component';
 import { EducationHeaderButtonComponent } from './components/education/education-header-button/education-header-button.component';
 import { SorryComponent } from './components/sorry/sorry.component';
+import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
+import { LoginButtonComponent } from './components/login-button/login-button.component';
+import { ProyectosComponent } from './components/proyectos/proyectos.component';
+import { BannerComponent } from './components/banner/banner.component';
 
 const appRoutes: Routes = [
-  {path: '', component : PortfolioComponent},
-  {path: 'card', component : ContactCardComponent},
+  {path: 'portfolio', component : PortfolioComponent},
+  /*{path: 'card', component : ContactCardComponent},
   {path: 'about', component : AboutComponent},
   {path: 'projects', component: CarrouselComponent},
   {path: 'skills', component: SkillBarsComponent},
-  {path: 'exp', component: WorkEduComponent},
+  {path: 'exp', component: WorkEduComponent},*/
   {path: 'sorry', component: SorryComponent},
-  {path: '**', component: Error404Component}
+  {path: '**', component: Error404Component},
+  {path: 'iniciar-sesion', component: IniciarSesionComponent},
+  {path: '', redirectTo:'portfolio', pathMatch:'full'}
 ]
 
 @NgModule({
@@ -45,7 +51,6 @@ const appRoutes: Routes = [
     AppComponent,
     NavbarComponent,
     NavBrandButtonComponent,
-    ContactCardComponent,
     CarrouselComponent,
     SkillBarsComponent,
     Error404Component,
@@ -64,14 +69,19 @@ const appRoutes: Routes = [
     AddEduComponent,
     EducationHeaderComponent,
     EducationHeaderButtonComponent,
-    SorryComponent
+    SorryComponent,
+    IniciarSesionComponent,
+    LoginButtonComponent,
+    ProyectosComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,
     FontAwesomeModule,
     HttpClientModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes, {enableTracing:true})  
+    RouterModule.forRoot(appRoutes, {enableTracing:true}),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

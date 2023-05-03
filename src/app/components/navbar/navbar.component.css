@@ -1,8 +1,26 @@
 nav{
-    background: #45526e;
+    background: black;
+}
+.nav-item1{
+    margin-top:auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 10px;
+    color:white;
 }
 .nav-item{
-    margin-left: 5px;
+    margin-top:auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    margin-right: 10px;
     color:white;
-    text-shadow: 1px 1px 5px black, 0 0 25px black, 0 0 5px black;
+}
+.nav-item-hover{
+    transform: scale(1.5 , 1.5);
+}
+img{
+    max-height: 30px;
+}
+p{
+    margin-top: 10px;
 }

@@ -18,9 +18,6 @@ export class EduUiService{
     this.subjet.next(this.showAddEdu);
   }
 
-  
-
-
   onToggle():Observable<any>{
     return this.subjet.asObservable();
   }
