@@ -7,16 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IntroComponent implements OnInit{
 
-  title:string = "Hi, my name is Guillermo Poggioni, but everybody call´s me 'Gui'...";
-  text1:string = "I´m a full stack Jr web developer from Córdoba, Argentina, and in this minimalistic"
-  text2:string = "portfolio you´ll find some of my projects, education and working experience."
-  text3: string = "I am the very proactive, motivated and fast learner developer that you won´t regreat to hire!!!"
-  text4:string = "Hope you like my job, scroll down to check this out!"
-
+  title:string = "</Hola, soy Guille>";
+  text1:string = "/Full Stack Developer Jr. de la provincia de Córdoba, Argentina, en este portfolio van a encontrar un poco de mi formación educativa, experiencias laborales y algunos de mis proyectos;";
+  text2: string = "...Soy una persona muy adaptable a cualquier equipo y estilo de trabajo, aprendo muy rápidamente, soy autodidacta, tengo excelente manejo del portugués y el inglés, pero principalmente me encantan los nuevos desafíos y seguir aprendiendo constantemente...";
+  nombre: string = "Guillermo Poggioni"
+  titulo: string = "Full Stack Developer Jr."
   constructor(){};
 
   ngOnInit(): void {};
   
 
 }
-

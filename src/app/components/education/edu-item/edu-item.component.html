@@ -1,19 +1,26 @@
 <div class="edu-item">   
-    <img [src]="edu.instLogoUrl" style="width:50px" alt="institution logo" >
-        <div class="container">
-            <h4>
-                {{edu.title}}
-                <fa-icon 
-                    [icon]= "faPencil"
-                    [ngStyle] = "{'color':'black'}"
-                    >
-                </fa-icon>
-                <fa-icon 
-                    [icon]= "faTrash"
-                    [ngStyle] = "{'color':'black'}"
-                    (click) = "onDelete(edu)">
-                </fa-icon>
-            </h4>
+    <img [src]="edu.instLogoUrl" style="width:20%" alt="institution logo" >
+        <div class="container">    
+            <div  class="d-flex justify-content-between">
+                <div class="flex">
+                    <h4>
+                        {{edu.title}}
+                    </h4>
+                </div>
+                <div class="flex">
+                    <fa-icon 
+                        [icon]= "faPencil"
+                        [ngStyle] = "{'color':'black'}"
+                        >
+                    </fa-icon>
+                    <fa-icon 
+                        [icon]= "faTrash"
+                        [ngStyle] = "{'color':'black'}"
+                        (click) = "onDelete(edu)">
+                    </fa-icon>
+                </div>
+             </div>
             <p>{{edu.course}}<span> in {{edu.year}}</span></p>
+            <a title="link al certificado Obtenido" href="#" class="text-dark"> Certificado </a>
         </div>
     </div>

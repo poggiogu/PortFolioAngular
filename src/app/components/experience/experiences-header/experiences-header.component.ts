@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 })
 export class ExperiencesHeaderComponent {
 
-  title: string = 'Working Experience';
+  title: string = 'Experiencia Laboral';
   showAddExp : boolean = false;
   subscription? : Subscription;
 

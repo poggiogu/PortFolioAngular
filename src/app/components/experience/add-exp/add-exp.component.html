@@ -3,7 +3,7 @@
     (ngSubmit)="onSubmit()"
     *ngIf="showAddExp">
     <div class="form-control">
-        <label for="text">Company Name</label>
+        <label for="text">Nombre de la empresa</label>
         <input 
             type="text" 
             name="text" 
@@ -12,9 +12,19 @@
             [(ngModel)] = "text"
         />
     </div>
+    <div class="form-control">
+        <label for="text">Cargo / Posición</label>
+        <input 
+            type="text" 
+            name="cargo" 
+            id="text" 
+            placeholder="'cargo'" 
+            [(ngModel)] = "text"
+        />
+    </div>
 
     <div class="form-control">
-        <label for="day">Since when untill when?</label>
+        <label for="day">Período</label>
         <input 
             type="text" 
             name="dates" 
@@ -25,7 +35,7 @@
     </div>
 
     <div class="form-control">
-        <label for="reminder">Company Logo Url</label>
+        <label for="reminder">Url Logo de la Empresa</label>
         <input 
             type="text" 
             name="brandLogoUrl"

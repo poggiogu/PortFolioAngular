@@ -15,6 +15,7 @@ export class AddExpComponent {
   text:string = "";
   dates:string = "";
   brandLogoUrl:string = "";
+  cargo:string = "";
   id : number = 0;
   exps:Exp[] = [];
   showAddExp: boolean = false;
@@ -41,8 +42,8 @@ export class AddExpComponent {
       alert("Please add a working experience item!")
       return
     }
-    const {text, dates, brandLogoUrl, id} = this 
-    const newExp = {text, dates, brandLogoUrl, id};
+    const {text, dates, brandLogoUrl, cargo, id} = this 
+    const newExp = {text, dates, brandLogoUrl, cargo, id};
 
     this.onAddExp.emit(newExp)
 

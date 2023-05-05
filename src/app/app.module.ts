@@ -8,7 +8,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { NavBrandButtonComponent } from './components/nav-brand-button/nav-brand-button.component';
 import { CarrouselComponent } from './components/carrousel/carrousel.component';
 import { SkillBarsComponent } from './components/skill-bars/skill-bars.component';
 import { Error404Component } from './components/error404/error404.component';
@@ -31,15 +30,9 @@ import { SorryComponent } from './components/sorry/sorry.component';
 import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
 import { LoginButtonComponent } from './components/login-button/login-button.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
-import { BannerComponent } from './components/banner/banner.component';
 
 const appRoutes: Routes = [
   {path: 'portfolio', component : PortfolioComponent},
-  /*{path: 'card', component : ContactCardComponent},
-  {path: 'about', component : AboutComponent},
-  {path: 'projects', component: CarrouselComponent},
-  {path: 'skills', component: SkillBarsComponent},
-  {path: 'exp', component: WorkEduComponent},*/
   {path: 'sorry', component: SorryComponent},
   {path: '**', component: Error404Component},
   {path: 'iniciar-sesion', component: IniciarSesionComponent},
@@ -50,7 +43,6 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     NavbarComponent,
-    NavBrandButtonComponent,
     CarrouselComponent,
     SkillBarsComponent,
     Error404Component,
@@ -73,7 +65,6 @@ const appRoutes: Routes = [
     IniciarSesionComponent,
     LoginButtonComponent,
     ProyectosComponent,
-    BannerComponent
   ],
   imports: [
     BrowserModule,

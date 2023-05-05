@@ -7,8 +7,8 @@
 .container{
     width:100%;
     margin: auto;
+    max-height: 600px;
     overflow: auto;
-    max-height: 500px;
     padding: 20px;
 }
 .container::-webkit-scrollbar-track {

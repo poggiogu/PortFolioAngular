@@ -16,6 +16,7 @@ export class AddEduComponent {
   course:string = "";
   year:string = "";
   instLogoUrl:string = "";
+  certificadoUrl:string = "";
   id : number = 0;
   edus:Edu[] = [];
   showAddEdu: boolean = false;
@@ -42,8 +43,8 @@ export class AddEduComponent {
       alert("Please add a course or degree item!")
       return
     }
-    const {title, course, instLogoUrl, year, id} = this 
-    const newEdu = {title, course, instLogoUrl, year, id};
+    const {title, course, instLogoUrl, year, certificadoUrl, id} = this 
+    const newEdu = {title, course, instLogoUrl, certificadoUrl, year, id};
 
     this.onAddEdu.emit(newEdu)
   }

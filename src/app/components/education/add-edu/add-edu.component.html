@@ -3,18 +3,18 @@
     (ngSubmit)="onSubmit()"
     *ngIf="showAddEdu">
     <div class="form-control">
-        <label for="title">Institution Name</label>
+        <label for="title">Nombre de la institución</label>
         <input 
             type="text" 
             name="title" 
             id="title" 
-            placeholder="'Institution Name'" 
+            placeholder="'Nombre de la institución'" 
             [(ngModel)] = "title"
         />
     </div>
 
     <div class="form-control">
-        <label for="course">Course / Degree</label>
+        <label for="course">Courso / Grado</label>
         <input 
             type="text" 
             name="course" 
@@ -26,7 +26,7 @@
 
 
     <div class="form-control">
-        <label for="year">Year</label>
+        <label for="year">Año</label>
         <input 
             type="text" 
             name="year" 
@@ -37,7 +37,18 @@
     </div>
 
     <div class="form-control">
-        <label for="logo">Institution Logo Url</label>
+        <label for="year">Url certificado</label>
+        <input 
+            type="text" 
+            name="certificadoUrl" 
+            id="certificadoUrl" 
+            placeholder="'https://...'"
+            [(ngModel)] = "certificadoUrl"
+        />
+    </div>
+
+    <div class="form-control">
+        <label for="logo">Url logo de la institución </label>
         <input 
             type="text" 
             name="instLogoUrl"

@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class EducationHeaderComponent {
 
-  title: string = 'Educational experiences';
+  title: string = 'Formación y Certificaciones';
   showAddEdu : boolean = false;
   subscription? : Subscription;
 

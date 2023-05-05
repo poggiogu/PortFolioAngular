@@ -1,23 +1,25 @@
 <div class="container" id="back">
-  <div class="d-flex">
-    <div class="flex-fill" id="front-left">
-        <h3>
-            {{title}}
-        </h3>
-        <p>
-            {{text1}}
-            <br>
-            {{text2}}
-            <br>
-            {{text3}}
-            <br>
-            {{text4}}
-        <p>
+    <div class="d-flex" id="banner">
+      <div class="flex-grow-1" id="acercademi">
+        <h1><b>{{title}}</b></h1>
+        <h4 id="arriba">
+          {{text1}}
+        </h4>
+      </div>
     </div>
-    <div class="flex-fill" id="front-rigth">
-        <img class="rounded-pill" src="https://i.ibb.co/hDJ9jGS/foto-guille.jpg" alt="foto guille color">
-    </div>
-  </div>
+    <div class="d-flex justify-content-arround" id="card" >
+      <div class="flex" id="image">
+          <img class="rounded-pill" src="https://i.ibb.co/hDJ9jGS/foto-guille.jpg" alt="foto perfil">
+            <h5>
+              <b> {{nombre}}</b>
+            </h5>
+            <p>
+              {{titulo}}
+            </p>
+      </div>
+      <div class="flex-grow-1" id="descripcion">
+        <p>  
+          {{text2}}
+        </p>     
+      </div>
 </div>
-
-  

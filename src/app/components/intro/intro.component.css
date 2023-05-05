@@ -1,34 +1,112 @@
 #back{
     height: 100vh;
     min-width:100vw;
-    padding-top: 100px;
-    background: url(https://cdn.pixabay.com/photo/2016/08/02/07/45/the-polygon-1562743_960_720.jpg) repeat-y center center fixed;
+    background: url(https://i.ibb.co/cyRZBSv/the-polygon-1562743-960-720.webp) repeat-y center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;  
 }
-.d-flex{
-    height:80vh;
-    background-color: transparent;
+#banner{
+    height:70vh;
+    background: url(https://i.gifer.com/origin/2b/2bd6409223f135eefa87607dab8d12ef.gif) repeat-y center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
     border: 0px;
     border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 0px;
+    margin-right: 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#card{
+    margin-left: 2%;
+    max-height: 40vh;
+    text-align: center;
 }
 .rounded-pill{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width:80%;
-    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 25vw;
+    max-height: 25vh;
+    margin-top: -12.5vh;
 }
-.flex-fill{
-    width:50%;
+#acercademi{
+    margin-top: 25vh;
+    margin-bottom: 5vh;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: left;
+    color: white;
+    text-shadow: 2px 2px 4px black, 0 0 25px black, 0 0 5px black;
+    overflow: auto;
+    max-height: 200px;
+}
+#acercademi::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+}
+
+#acercademi::-webkit-scrollbar {
+    width: 15px;
+    background-color: transparent;
+}
+
+#acercademi::-webkit-scrollbar-thumb {
+    background-color: #5c5c5c;
+}
+#card{
+    width:100;
     height: 100vh;
     background-color: transparent;    
     padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 20vh;
 }
-#front-left{
-    margin-top: 150px;
-    color:white;
-    text-shadow: 1px 1px 5px black, 0 0 25px black, 0 0 5px black;
+#descripcion{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: -2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 3%;
+    text-shadow: 2px 2px 4px white, 0 0 25px white, 0 0 5px white;
+    text-align: left;
+    text-decoration: wavy;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 0px;
+    border-radius: 10px;
+    box-shadow: 1px 4px 25px 0 rgba(0, 0, 0, 0.2);
+    overflow:auto;
+    max-height: 25vh;
+    min-height: 20vh;
+    margin-bottom:20vh;
+}
+#descripcion::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+}
+
+#descripcion::-webkit-scrollbar {
+    width: 15px;
+    background-color: transparent;
+}
+
+#descripcion::-webkit-scrollbar-thumb {
+    background-color: #5c5c5c;
+}
+h1{
+    margin-bottom: 2%;    
+}
+#arriba{
+    margin-left: 5%;
+}
+#abajo{
+    margin-left: 10%;
 }

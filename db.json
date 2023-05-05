@@ -4,19 +4,43 @@
       "text": "Henisa S.A",
       "dates": "February 2021 to December 2022",
       "brandLogoUrl": "https://ii.ct-stc.com/5/logos/empresas/2016/12/27/6580d460500642faa2cethumbnail.jpeg",
+      "cargo":"cargo",
       "id": 2
     },
     {
       "text": "Nucleoeléctrica Argentina S.A.",
       "dates": "March 2022 to December 2022",
       "brandLogoUrl": "http://chilicote.com.ar/wp-content/uploads/2019/04/nasa-logo.png",
+      "cargo":"cargo",
       "id": 4
     },
     {
       "text": "Capital One Credit Card",
       "dates": "February 2006 to December 2009",
       "brandLogoUrl": "https://www.pngfind.com/pngs/m/213-2137829_212-888-capital-one-bank-logo-hd-png.png",
+      "cargo":"cargo",
       "id": 5
+    },
+    {
+      "text": "Henisa S.A",
+      "dates": "February 2021 to December 2022",
+      "brandLogoUrl": "https://ii.ct-stc.com/5/logos/empresas/2016/12/27/6580d460500642faa2cethumbnail.jpeg",
+      "cargo":"cargo",
+      "id": 2
+    },
+    {
+      "text": "Henisa S.A",
+      "dates": "February 2021 to December 2022",
+      "brandLogoUrl": "https://ii.ct-stc.com/5/logos/empresas/2016/12/27/6580d460500642faa2cethumbnail.jpeg",
+      "cargo":"cargo",
+      "id": 2
+    },
+    {
+      "text": "Henisa S.A",
+      "dates": "February 2021 to December 2022",
+      "brandLogoUrl": "https://ii.ct-stc.com/5/logos/empresas/2016/12/27/6580d460500642faa2cethumbnail.jpeg",
+      "cargo":"cargo",
+      "id": 2
     }
   ],
   "edus": [
@@ -24,14 +48,16 @@
       "title": "Udacity",
       "course": "data scrapping with python" ,
       "year": "2018",
-      "instLogoUrl": "https://speedlux.com/wp-content/uploads/2016/10/udacity-logo-280x147.png",
+      "instLogoUrl": "https://i.ibb.co/5M7PPDt/TFJQ7-XKs-Vwe-QUEQn-DHf-LWDIz-Iz94-Um9y6wx-Kudu-Z.webp",
+      "certificadoUrl":"urlcertificado",
       "id": 1
     },
     {
       "title": "Udacity",
-      "course": "linear algebra" ,
+      "course": "linear algebra",
       "year": "2018",
-      "instLogoUrl": "https://speedlux.com/wp-content/uploads/2016/10/udacity-logo-280x147.png",
+      "instLogoUrl": "https://i.ibb.co/5M7PPDt/TFJQ7-XKs-Vwe-QUEQn-DHf-LWDIz-Iz94-Um9y6wx-Kudu-Z.webp",
+      "certificadoUrl":"urlcertificado",
       "id": 2
     },
     {
@@ -39,8 +65,37 @@
       "course": "se_programar" ,
       "year": "2021",
       "instLogoUrl": "https://cdn-sp.radionacional.com.ar/wp-content/uploads/2021/12/Diseno-sin-titulo-1-1.png",
+      "certificadoUrl":"urlcertificado",
       "id": 3
+    },
+    {
+      "title": "Udacity",
+      "course": "data scrapping with python" ,
+      "year": "2018",
+      "instLogoUrl": "https://i.ibb.co/5M7PPDt/TFJQ7-XKs-Vwe-QUEQn-DHf-LWDIz-Iz94-Um9y6wx-Kudu-Z.webp",
+      "certificadoUrl":"urlcertificado",
+      "id": 1
+    },
+    {
+      "title": "Udacity",
+      "course": "data scrapping with python" ,
+      "year": "2018",
+      "instLogoUrl": "https://i.ibb.co/5M7PPDt/TFJQ7-XKs-Vwe-QUEQn-DHf-LWDIz-Iz94-Um9y6wx-Kudu-Z.webp",
+      "certificadoUrl":"urlcertificado",
+      "id": 1
     }
 
+  ],
+  "perfil":[
+    {
+      "nombre": "Guillermo Poggioni",
+      "titulo": "Full Stack Jr. Web Developer",
+      "title": "</Hola, soy Guillermo>",
+      "text1": "Un full stack Jr web developer de la provincia de Córdoba, Argentina, y en este portfolio van a encontrar un poco de mi formación educativa, experiencias laborales y algunos de mis proyectos.",
+      "text2": "Soy una persona muy adaptable a cualquier equipo de trabajo, aprendo muy rápídamente y soy un excelente autodidacta.",
+      "url-foto-perfil":"https://i.ibb.co/hDJ9jGS/foto-guille.jpg",
+      "url-foto-banner":"#"
+    }
   ]
+  
 }
