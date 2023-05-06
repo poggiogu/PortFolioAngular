@@ -1,5 +1,6 @@
 import { Exp } from "./Exp";
 import { Edu } from "./Edu";
+import { Iproyecto } from "./iproyecto";
 
 export const EXPS:Exp[] = [
     {
@@ -19,5 +20,15 @@ export const EDUS:Edu[]=[
         instLogoUrl: "https://speedlux.com/wp-content/uploads/2016/10/udacity-logo-280x147.png",
         certificadoUrl:"certificado",
         id: 2
+    }
+]
+
+export const PROYECTOS:Iproyecto[]=[
+    {
+        "id":1,
+        "nombre":"Portfolio",
+        "descripcion":"un portfolio personal resposivo y editable",
+        "urlimagen":"https://cdn.pixabay.com/photo/2016/09/14/15/48/usa-1669704_960_720.jpg",
+        "urlrepositorio":"#"
     }
 ]

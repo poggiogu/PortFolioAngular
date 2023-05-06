@@ -8,7 +8,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { CarrouselComponent } from './components/carrousel/carrousel.component';
+import { CarrouselComponent } from './components/Proyects/carrousel/carrousel.component';
 import { SkillBarsComponent } from './components/skill-bars/skill-bars.component';
 import { Error404Component } from './components/error404/error404.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -20,7 +20,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ExperiencesHeaderComponent } from './components/experience/experiences-header/experiences-header.component';
 import { ExperiencesHeaderButtonComponent } from './components/experience/experiences-header-button/experiences-header-button.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
-import { WorkEduComponent } from './components/work-edu/work-edu.component';
+import { WorkEduComponent } from './components/ExperienciasYEducacion/work-edu/work-edu.component';
 import { EduComponent } from './components/education/edu/edu.component';
 import { EduItemComponent } from './components/education/edu-item/edu-item.component';
 import { AddEduComponent } from './components/education/add-edu/add-edu.component';
@@ -29,7 +29,15 @@ import { EducationHeaderButtonComponent } from './components/education/education
 import { SorryComponent } from './components/sorry/sorry.component';
 import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
 import { LoginButtonComponent } from './components/login-button/login-button.component';
-import { ProyectosComponent } from './components/proyectos/proyectos.component';
+import { ProyectosComponent } from './components/Proyects/proyectos/proyectos.component';
+import { ProyectoComponent } from './components/Proyects/proyecto-item/proyecto.component';
+import { AddProyectoBtnComponent } from './components/Proyects/add-proyecto-btn/add-proyecto-btn.component';
+import { ProyectoElementComponent } from './components/Proyects/proyecto-element/proyecto-element.component';
+import { ModalComponent } from './components/modal/modal.component';
+
+
+
+
 
 const appRoutes: Routes = [
   {path: 'portfolio', component : PortfolioComponent},
@@ -65,7 +73,11 @@ const appRoutes: Routes = [
     IniciarSesionComponent,
     LoginButtonComponent,
     ProyectosComponent,
-  ],
+    ProyectoComponent,
+    AddProyectoBtnComponent,
+    ProyectoElementComponent,
+    ModalComponent,
+],
   imports: [
     BrowserModule,
     FontAwesomeModule,

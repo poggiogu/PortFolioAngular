@@ -10,17 +10,18 @@
 .carousel-inner{
     background-color: transparent;
     margin-right: auto;
+    
 }
-.carousel-caption{
-    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
-    color:white;
-}
-.btn-contrl{
-    opacity:0;
+.btn-control{
+    background-color: rgb(43, 43, 43);
     transition: opacity 2s;
+    text-shadow: 1px 1px 2px white 0 0 25px white, 0 0 5px white;
+    color:black;
+    opacity: 0.2;
+    max-width: 10vw;
 }
 .btn-control:hover{
     background-color: rgb(43, 43, 43);
-    opacity: 0.2;
+    opacity: 0.5;
     cursor:pointer;
 }
