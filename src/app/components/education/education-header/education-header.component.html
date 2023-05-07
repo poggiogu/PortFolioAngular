@@ -1,8 +1,10 @@
-<header>
-    <h3>{{title}}</h3>
-    <app-education-header-button 
-    color = "{{showAddEdu ? 'red' : 'green'}}"
-    text = "{{showAddEdu ? 'Close' : 'Add+'}}"
-    (btnClick)="toggleAddEdu()"
-    ></app-education-header-button>    
-</header>
+<div class="jumbotron">
+    <div class="container text-center">
+        <h1>{{title}}</h1>
+        <app-education-header-button 
+        color = "{{showAddEdu ? 'red' : 'green'}}"
+        text = "{{showAddEdu ? 'Close' : 'Add+'}}"
+        (btnClick)="toggleAddEdu()"
+        ></app-education-header-button>    
+    </div>
+</div>

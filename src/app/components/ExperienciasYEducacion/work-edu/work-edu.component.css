@@ -1,14 +1,11 @@
-.d-flex{
-    height: 100vh;
-    min-width:100vw;
+.container-fluid{
     background: url(https://i.ibb.co/cyRZBSv/the-polygon-1562743-960-720.webp) repeat-y center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;  
-    margin: 0px;
-    padding:0px;
-
+    background-size: cover; 
+    margin-bottom: auto;
+   
 }
 .flex-fill{
     width:50%;
@@ -17,4 +14,5 @@
     margin-bottom: 100px;
     background-color: transparent;
 }
+
 

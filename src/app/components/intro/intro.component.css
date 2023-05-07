@@ -46,19 +46,7 @@
     overflow: auto;
     max-height: 200px;
 }
-#acercademi::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: transparent;
-}
 
-#acercademi::-webkit-scrollbar {
-    width: 15px;
-    background-color: transparent;
-}
-
-#acercademi::-webkit-scrollbar-thumb {
-    background-color: #5c5c5c;
-}
 #card{
     width:100;
     height: 100vh;
@@ -67,46 +55,20 @@
     padding-right: 20px;
     margin-bottom: 20vh;
 }
-#descripcion{
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: -2%;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 3%;
+#caja_descripcion{
+    margin-top: -1%;
     text-shadow: 2px 2px 4px white, 0 0 25px white, 0 0 5px white;
-    text-align: left;
-    text-decoration: wavy;
-    display: flex;
-    align-items: center;
+    text-align: center;
     background-color: transparent;
     border: 0px;
     border-radius: 10px;
     box-shadow: 1px 4px 25px 0 rgba(0, 0, 0, 0.2);
-    overflow:auto;
-    max-height: 25vh;
-    min-height: 20vh;
-    margin-bottom:20vh;
+    margin-bottom:30vh;
+    min-height: 15vh;
 }
-#descripcion::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: transparent;
-}
-
-#descripcion::-webkit-scrollbar {
-    width: 15px;
-    background-color: transparent;
-}
-
-#descripcion::-webkit-scrollbar-thumb {
-    background-color: #5c5c5c;
+#texto_desc{
+    margin-top: 2vh;
 }
 h1{
     margin-bottom: 2%;    
-}
-#arriba{
-    margin-left: 5%;
-}
-#abajo{
-    margin-left: 10%;
 }

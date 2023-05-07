@@ -1,7 +1,7 @@
-<div class="container" id="back">
+<div class="container-fluid" id="back">
     <div class="d-flex" id="banner">
       <div class="flex-grow-1" id="acercademi">
-        <h1><b>{{title}}</b></h1>
+        <h1>{{title}}</h1>
         <h4 id="arriba">
           {{text1}}
         </h4>
@@ -11,15 +11,20 @@
       <div class="flex" id="image">
           <img class="rounded-pill" src="https://i.ibb.co/hDJ9jGS/foto-guille.jpg" alt="foto perfil">
             <h5>
-              <b> {{nombre}}</b>
+              <b>
+                {{nombre}}
+              </b>
             </h5>
             <p>
               {{titulo}}
             </p>
       </div>
-      <div class="flex-grow-1" id="descripcion">
-        <p>  
-          {{text2}}
-        </p>     
+      <div class="flex-grow p-2 m-1" id="fondo_caja">
+          <div class="flex-grow p-2" id="caja_descripcion">
+            <p id="texto_desc">  
+              {{text2}}
+            </p>     
+          </div>
       </div>
+  </div>
 </div>

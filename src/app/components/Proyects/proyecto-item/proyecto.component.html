@@ -1,12 +1,38 @@
-<div class="d-flex justify-content-center">
-    <img src="https://cdn.pixabay.com/photo/2016/09/14/15/48/usa-1669704_960_720.jpg" 
+<div class="card" style="max-width: 18rem;">
+    <img class="card-img-top"
+         [src]= "proyecto.urlimagen"
          alt="proyecto" 
-         class="d-block"
-         style="height: 50vh; width:80vh"
          >
-    <div class="carousel-caption">
-        <h5><strong>Photo Gallery App</strong></h5>
-        <p>easy use, fast and responsive gallery to organize and show your photos</p>
-        <a style="color:white" routerLink="/sorry"><b>repositorio</b></a>
+    <div class="card-body">
+        <h5 class="card-title"><strong>{{proyecto.nombre}}</strong></h5>
+        <p class="card-text">{{proyecto.descripcion}}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">{{proyecto.fecha}}</li>
+        <li class="list-group-item">
+            <a style="color:black" href={{proyecto.urlrepositorio}}>
+                <b>
+                  ir al repositorio
+                </b>
+            </a>
+        </li>
+    </ul>
+    <div class="card-body">    
+        <div class="btn-group" role="group" aria-label="edit-delete">
+            <button type="button" class="btn btn-dark">
+                <fa-icon 
+                        [icon]= "faPencil"
+                        [ngStyle] = "{'color':'white'}"
+                        >
+                </fa-icon>
+            </button>
+            <button type="button" class="btn btn-danger">
+                <fa-icon 
+                    [icon]= "faTrash"
+                    [ngStyle] = "{'color':'white'}"
+                    (click) = "onDelete(proyecto)">
+                </fa-icon>
+            </button>
+        </div> 
     </div>
 </div>

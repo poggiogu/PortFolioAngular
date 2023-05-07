@@ -28,3 +28,4 @@ export class ExpItemComponent implements OnInit {
     this.onDeleteExp.emit(exp)
   };   
 }
+

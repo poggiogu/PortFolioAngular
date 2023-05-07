@@ -29,7 +29,7 @@ export class ProyectService {
     return this.http.delete<Iproyecto>(url)
   }
 
-  addEdu(proyect:Iproyecto): Observable<Iproyecto> {
+  addProyect(proyect:Iproyecto): Observable<Iproyecto> {
     return this.http.post<Iproyecto>(this.apiUrl, proyect, httpOptions)
   }
 }

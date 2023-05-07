@@ -8,7 +8,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { CarrouselComponent } from './components/Proyects/carrousel/carrousel.component';
 import { SkillBarsComponent } from './components/skill-bars/skill-bars.component';
 import { Error404Component } from './components/error404/error404.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -32,10 +31,8 @@ import { LoginButtonComponent } from './components/login-button/login-button.com
 import { ProyectosComponent } from './components/Proyects/proyectos/proyectos.component';
 import { ProyectoComponent } from './components/Proyects/proyecto-item/proyecto.component';
 import { AddProyectoBtnComponent } from './components/Proyects/add-proyecto-btn/add-proyecto-btn.component';
-import { ProyectoElementComponent } from './components/Proyects/proyecto-element/proyecto-element.component';
-import { ModalComponent } from './components/modal/modal.component';
-
-
+import { ProyectoElementComponent } from './components/Proyects/proy/proyecto-element.component';
+import { AddProyectComponent } from './components/Proyects/add-proyect/add-proyect.component';
 
 
 
@@ -51,7 +48,6 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     NavbarComponent,
-    CarrouselComponent,
     SkillBarsComponent,
     Error404Component,
     FooterComponent,
@@ -76,7 +72,7 @@ const appRoutes: Routes = [
     ProyectoComponent,
     AddProyectoBtnComponent,
     ProyectoElementComponent,
-    ModalComponent,
+    AddProyectComponent,
 ],
   imports: [
     BrowserModule,
@@ -84,7 +80,7 @@ const appRoutes: Routes = [
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot(appRoutes, {enableTracing:true}),
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

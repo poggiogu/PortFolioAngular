@@ -1,0 +1,18 @@
+div{
+    margin: 5px;
+}
+h3{
+    margin:10px;
+}
+label{
+    margin: 5px;
+}
+
+form{
+    color:black;
+}
+
+.d-flex{
+    justify-content: center;
+    padding-top: 3%;
+}

@@ -25,10 +25,11 @@ export const EDUS:Edu[]=[
 
 export const PROYECTOS:Iproyecto[]=[
     {
-        "id":1,
-        "nombre":"Portfolio",
-        "descripcion":"un portfolio personal resposivo y editable",
-        "urlimagen":"https://cdn.pixabay.com/photo/2016/09/14/15/48/usa-1669704_960_720.jpg",
-        "urlrepositorio":"#"
+        id:1,
+        nombre:"Portfolio",
+        descripcion:"un portfolio personal resposivo y editable",
+        fecha:"Junio 2020",
+        urlimagen:"https://cdn.pixabay.com/photo/2016/09/14/15/48/usa-1669704_960_720.jpg",
+        urlrepositorio:"#"
     }
 ]
