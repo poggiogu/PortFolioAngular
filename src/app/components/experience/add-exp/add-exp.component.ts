@@ -18,28 +18,16 @@ export class AddExpComponent {
   cargo:string = "";
   id : number = 0;
   exps:Exp[] = [];
-  showAddExp: boolean = false;
-  subscription?: Subscription;
-    
+      
   constructor( 
     private expService : ExpService,
     private uiService:UiService
-  ) {
-    this.subscription = this.uiService.onToggle().subscribe(value => this.showAddExp = value)
-  };
+  ) { };
   ngOnInit (): void {}
   
-  //modified code
-  getId() {
-    this.expService.getExps().subscribe((exps: any) => 
-    (this.id = this.exps.length)) 
-    this.id += 2
-  }  
-  //modified code
-
   onSubmit(){
     if(this.text.length === 0){
-      alert("Please add a working experience item!")
+      alert("Por favor agregue una experiencia laboral!")
       return
     }
     const {text, dates, brandLogoUrl, cargo, id} = this 

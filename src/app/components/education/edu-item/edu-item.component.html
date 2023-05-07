@@ -8,19 +8,26 @@
                     </h4>
                 </div>
                 <div class="flex">
-                    <fa-icon 
-                        [icon]= "faPencil"
-                        [ngStyle] = "{'color':'black'}"
-                        >
-                    </fa-icon>
-                    <fa-icon 
-                        [icon]= "faTrash"
-                        [ngStyle] = "{'color':'black'}"
-                        (click) = "onDelete(edu)">
-                    </fa-icon>
+                    <div class="btn-group" role="group" aria-label="edit-delete">
+                        <button type="button" class="btn btn-dark">
+                            <fa-icon 
+                                    [icon]= "faPencil"
+                                    [ngStyle] = "{'color':'white'}"
+                                    >
+                            </fa-icon>
+                        </button>
+                        <button type="button" class="btn btn-danger">
+                            <fa-icon 
+                                [icon]= "faTrash"
+                                [ngStyle] = "{'color':'white'}"
+                                (click) = "onDelete(edu)">
+                            </fa-icon>
+                        </button>
+                    </div>  
                 </div>
              </div>
             <p>{{edu.course}}<span> in {{edu.year}}</span></p>
             <a title="link al certificado Obtenido" href="#" class="text-dark"> Certificado </a>
         </div>
     </div>
+    

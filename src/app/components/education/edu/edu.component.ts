@@ -32,9 +32,4 @@ export class EduComponent implements OnInit {
     ))
   }
 
-  addEdu(edu:Edu){
-    this.eduService.addEdu(edu).subscribe((edu)=>(
-      this.edus.push(edu)
-    ))
-  }
 }

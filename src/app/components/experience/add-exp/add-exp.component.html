@@ -1,42 +1,48 @@
-<form  
-    class="mb-3" Style="margin:20px"
+<form 
+    class="add-form"   
     (ngSubmit)="onSubmit()"
-    *ngIf="showAddExp">
-    <div class="form-control">
-        <label for="text">Nombre de la empresa</label>
-        <input 
+    class="sm-8 mb-6 lg-4" 
+    Style="margin:5%">
+    <h3>
+        Nueva Experiencia Laboral
+    </h3>
+    <div>
+        <label for="text">Nombre de la Empresa</label>
+        <input
+            class="form-control" 
             type="text" 
             name="text" 
             id="text" 
-            placeholder="'Company Name'" 
+            placeholder="'Nombre de la Empresa'" 
             [(ngModel)] = "text"
         />
     </div>
-    <div class="form-control">
-        <label for="text">Cargo / Posición</label>
+    <div>
+        <label for="cargo">Cargo / Posición</label>
         <input 
+            class="form-control"
             type="text" 
             name="cargo" 
             id="text" 
-            placeholder="'cargo'" 
+            placeholder="'Cargo'" 
             [(ngModel)] = "text"
         />
     </div>
-
-    <div class="form-control">
-        <label for="day">Período</label>
+    <div>
+        <label for="dates">Período</label>
         <input 
+            class="form-control"
             type="text" 
             name="dates" 
             id="dates" 
-            placeholder="'December 2021 untill today...'"
+            placeholder="'Junio 2018 - Marzo 2020'"
             [(ngModel)] = "dates"
         />
     </div>
-
-    <div class="form-control">
-        <label for="reminder">Url Logo de la Empresa</label>
+    <div >
+        <label for="logo">Url Logo de la Empresa</label>
         <input 
+            class="form-control"
             type="text" 
             name="brandLogoUrl"
             id="logo"
@@ -44,23 +50,7 @@
             [(ngModel)] = "brandLogoUrl"
         />
     </div>
-    <input type="submit" value="Save Exp" class="btn btn-block btn-dark">
+    <div class="d-flex  mb-12 lg-12 sm-12">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
 </form>
-
-
-<!--Para habilitar el [formGroup] hay que importar ReactiveFormsModule en el modulo correspondiente
-agregamos el evento (ngSubmit) del boton enviar del formulario
-
-<form  class="mb-3" Style="margin:20px">
-    <h3>Iniciar Sesión</h3>
-    <p>para acceder a las herrramientas de edición</p>
-    <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Email</label>
-      <input type="email" formControlName="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-      <input type="password" formControlName="password" class="form-control" id="exampleInputPassword1">
-    </div>
-    <button type="submit" class="btn btn-primary">Enviar</button>
-</form>-->

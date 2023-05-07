@@ -1,10 +1,10 @@
-<div class="container">
-    <app-add-edu
-        (onAddEdu) = "addEdu($event)"
-    ></app-add-edu>
-    <app-edu-item 
-        *ngFor="let edu of edus"
-        [edu] = "edu"
-        (onDeleteEdu)="deleteEdu(edu)"
-    ></app-edu-item>
+<div class="container-fluid">
+    <div class="row">
+        <app-edu-item 
+            class="col-md-6 my-2"
+            *ngFor="let edu of edus"
+            [edu] = "edu"
+            (onDeleteEdu)="deleteEdu(edu)"
+        ></app-edu-item>
+    </div>
 </div>

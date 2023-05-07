@@ -1,5 +1,5 @@
 <div class="exp-item">   
-<img [src]= "exp.brandLogoUrl" style="width:20%" alt="Company Logo" >
+    <img [src]= "exp.brandLogoUrl" style="width:20%" alt="Company Logo" >
     <div class="container">
         <div  class="d-flex justify-content-between">
             <div class="flex">
@@ -8,16 +8,22 @@
                 </h4>
             </div>
             <div class="flex">
-                <fa-icon 
-                    [icon]= "faPencil"
-                    [ngStyle] = "{'color':'black'}"
-                    >
-                </fa-icon>
-                <fa-icon 
-                    [icon]= "faTrash"
-                    [ngStyle] = "{'color':'black'}"
-                    (click) = "onDelete(exp)">
-                </fa-icon>
+                <div class="btn-group" role="group" aria-label="edit-delete">
+                    <button type="button" class="btn btn-dark">
+                        <fa-icon 
+                                [icon]= "faPencil"
+                                [ngStyle] = "{'color':'white'}"
+                                >
+                        </fa-icon>
+                    </button>
+                    <button type="button" class="btn btn-danger">
+                        <fa-icon 
+                            [icon]= "faTrash"
+                            [ngStyle] = "{'color':'white'}"
+                            (click) = "onDelete(exp)">
+                        </fa-icon>
+                    </button>
+                </div> 
             </div>
          </div>
         <p>{{exp.cargo}}</p>

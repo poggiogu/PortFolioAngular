@@ -1,10 +1,15 @@
 <form 
     class="add-form"   
     (ngSubmit)="onSubmit()"
-    *ngIf="showAddEdu">
-    <div class="form-control">
-        <label for="title">Nombre de la institución</label>
-        <input 
+    class="sm-8 mb-6 lg-4"
+    Style="margin:5%">
+    <h3>
+        Nuevo Curso
+    </h3>
+    <div>
+        <label for="title">Nombre de la Institución</label>
+        <input
+            class="form-control" 
             type="text" 
             name="title" 
             id="title" 
@@ -12,10 +17,10 @@
             [(ngModel)] = "title"
         />
     </div>
-
-    <div class="form-control">
+    <div>
         <label for="course">Courso / Grado</label>
         <input 
+            class="form-control"
             type="text" 
             name="course" 
             id="course" 
@@ -23,11 +28,10 @@
             [(ngModel)] = "course"
         />
     </div>
-
-
-    <div class="form-control">
+    <div>
         <label for="year">Año</label>
-        <input 
+        <input
+            class="form-control" 
             type="text" 
             name="year" 
             id="year" 
@@ -35,10 +39,10 @@
             [(ngModel)] = "year"
         />
     </div>
-
-    <div class="form-control">
-        <label for="year">Url certificado</label>
+    <div>
+        <label for="certificadoUrl">Url certificado</label>
         <input 
+            class="form-control"
             type="text" 
             name="certificadoUrl" 
             id="certificadoUrl" 
@@ -46,10 +50,10 @@
             [(ngModel)] = "certificadoUrl"
         />
     </div>
-
-    <div class="form-control">
-        <label for="logo">Url logo de la institución </label>
-        <input 
+    <div>
+        <label for="logo">Url del logo de la institución </label>
+        <input
+            class="form-control" 
             type="text" 
             name="instLogoUrl"
             id="logo"
@@ -57,5 +61,7 @@
             [(ngModel)] = "instLogoUrl"
         />
     </div>
-    <input type="submit" value="Save Add" class="btn btn-block btn-dark">
+    <div class="d-flex  mb-12 lg-12 sm-12">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
 </form>

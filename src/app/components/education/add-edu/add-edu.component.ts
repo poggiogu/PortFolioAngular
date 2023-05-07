@@ -19,28 +19,16 @@ export class AddEduComponent {
   certificadoUrl:string = "";
   id : number = 0;
   edus:Edu[] = [];
-  showAddEdu: boolean = false;
-  subscription?: Subscription;
     
   constructor( 
     private eduService : EduService,
     private eduUiService : EduUiService
-  ) {
-    this.subscription = this.eduUiService.onToggle().subscribe(value => this.showAddEdu = value)
-  };
+  ) {};
   ngOnInit (): void {}
   
-  //modified code
-  getId() {
-    this.eduService.getEdus().subscribe((edus: any) => 
-    (this.id = this.edus.length)) 
-    this.id += 2
-  }  
-  //modified code
-
   onSubmit(){
     if(this.title.length === 0){
-      alert("Please add a course or degree item!")
+      alert("Por favor agregar un curso!")
       return
     }
     const {title, course, instLogoUrl, year, certificadoUrl, id} = this 
@@ -49,3 +37,5 @@ export class AddEduComponent {
     this.onAddEdu.emit(newEdu)
   }
 }
+
+

@@ -1,21 +1,30 @@
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
+import { Edu } from 'src/app/Edu';
+import { EduService } from 'src/app/services/edu.service';
+import { Observable, of } from 'rxjs';
+import { HttpClient, HttpHandler } from '@angular/common/http';
 
 @Component({
   selector: 'app-education-header-button',
   templateUrl: './education-header-button.component.html',
   styleUrls: ['./education-header-button.component.css']
 })
-export class EducationHeaderButtonComponent {
+export class EducationHeaderButtonComponent implements OnInit{
 
-  @Input() text:string = "";
-  @Input() color:string = "";
-  @Output() btnClick = new EventEmitter();
-  constructor () {}
+  edus : Edu[] = [];
+  
+  constructor (private eduService: EduService) {}
 
-  ngonInit(): void {}
-
-  onClick() {
-    this.btnClick.emit();
+  ngOnInit(): void { 
+    //como una promesa
+    this.eduService.getEdus().subscribe((edus) => 
+    (this.edus = edus)); //método subscribe de los observables
   }
-
+  
+  addEdu(edu : Edu){
+    this.eduService.addEdu(edu).subscribe((edu)=>(
+      this.edus.push(edu)
+    ))
+  }  
 }
+

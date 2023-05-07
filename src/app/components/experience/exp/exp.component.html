@@ -1,8 +1,5 @@
 <div class="container-fluid">
     <div class="row">
-        <app-add-exp
-            (onAddExp) = "addExp($event)"
-        ></app-add-exp>
         <app-exp-item 
             class="col-md-6 my-2"
             *ngFor="let exp of exps"
