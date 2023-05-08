@@ -11,11 +11,11 @@ import { faPencil } from '@fortawesome/free-solid-svg-icons';
 export class EduItemComponent implements OnInit {
   
   @Input() edu:Edu = {title: "", course: "" , year: "", instLogoUrl: "", certificadoUrl:"", id: 0};
+  
   @Output() onDeleteEdu : EventEmitter<Edu> = new EventEmitter()
 
   faTrash = faTrash;
   faPencil = faPencil;
-
 
   constructor () {}; 
 
@@ -24,6 +24,7 @@ export class EduItemComponent implements OnInit {
   };
 
   onDelete(edu:Edu){
+    console.log("onDelete del edu-item fue llamado!")
     this.onDeleteEdu.emit(edu)
   };   
 }

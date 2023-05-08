@@ -11,7 +11,7 @@ export class ProyectoComponent {
  
   @Input() proyecto:Iproyecto = {id:0, nombre:"", descripcion:"", fecha:"", urlimagen:"", urlrepositorio:""};
 
-  @Output() onDeleteProyecto : EventEmitter<Iproyecto> = new EventEmitter()
+  @Output() onDeleteProyect : EventEmitter<Iproyecto> = new EventEmitter()
 
   faTrash = faTrash;
   faPencil = faPencil;
@@ -22,8 +22,11 @@ export class ProyectoComponent {
     
   };
 
-  onDelete(proyecto:Iproyecto){
-    this.onDeleteProyecto.emit(proyecto)
+
+  onDelete(proyecto: Iproyecto){
+    console.log("onDelete funciona de proyecto item se ha llamado!")
+    this.onDeleteProyect.emit(proyecto)
   };   
 
 }
+

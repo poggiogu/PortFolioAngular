@@ -1,0 +1,17 @@
+.card{
+    background-color: transparent;
+    text-shadow: 2px 2px 4px white, 0 0 25px white, 0 0 5px white;
+    border: 0px;
+    border-radius: 10px;
+    box-shadow: 1px 4px 25px 0 rgba(0, 0, 0, 0.2);
+}
+.li{
+    background-color: transparent;
+}
+#button-box{
+    justify-content: end;
+}
+.d-flex{
+    justify-content: end;
+    padding-top: 3%;
+}

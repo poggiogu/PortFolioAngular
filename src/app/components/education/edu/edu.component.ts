@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Edu } from 'src/app/iEdu';
-import { Observable, of } from 'rxjs';
-import { HttpClient, HttpHandler } from '@angular/common/http';
 import { EduService } from 'src/app/services/edu.service';
 
 @Component({
@@ -24,6 +22,7 @@ export class EduComponent implements OnInit {
   }
 
   deleteEdu(edu:Edu) {
+    console.log("Delete edu de edu component fue llamado!")
     this.eduService.deleteEdu(edu)
     .subscribe( ()=> (
       this.edus = this.edus.filter ((e) => {

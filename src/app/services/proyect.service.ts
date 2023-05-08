@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs'; //porque es un método asincrónico
+import { Observable } from 'rxjs'; //porque es un método asincrónico
 import { Iproyecto } from '../iproyecto';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
@@ -34,4 +34,3 @@ export class ProyectService {
   }
 
 }
-

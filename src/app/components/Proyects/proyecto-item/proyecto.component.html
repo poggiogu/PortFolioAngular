@@ -8,8 +8,8 @@
         <p class="card-text">{{proyecto.descripcion}}</p>
     </div>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">{{proyecto.fecha}}</li>
-        <li class="list-group-item">
+        <li class="list-group-item bg-transparent">{{proyecto.fecha}}</li>
+        <li class="list-group-item bg-transparent">
             <a style="color:black" href={{proyecto.urlrepositorio}}>
                 <b>
                   ir al repositorio
@@ -17,22 +17,24 @@
             </a>
         </li>
     </ul>
-    <div class="card-body">    
-        <div class="btn-group" role="group" aria-label="edit-delete">
-            <button type="button" class="btn btn-dark">
-                <fa-icon 
-                        [icon]= "faPencil"
+    <div class="card-body"> 
+        <div class="d-flex  mb-12 lg-12 sm-12">
+            <div class="btn-group " role="group" aria-label="edit-delete">
+                <button type="button" class="btn btn-dark">
+                    <fa-icon 
+                            [icon]= "faPencil"
+                            [ngStyle] = "{'color':'white'}"
+                            >
+                    </fa-icon>
+                </button>
+                <button type="button" class="btn btn-danger">
+                    <fa-icon 
+                        [icon]= "faTrash"
                         [ngStyle] = "{'color':'white'}"
-                        >
-                </fa-icon>
-            </button>
-            <button type="button" class="btn btn-danger">
-                <fa-icon 
-                    [icon]= "faTrash"
-                    [ngStyle] = "{'color':'white'}"
-                    (click) = "onDelete(proyecto)">
-                </fa-icon>
-            </button>
-        </div> 
+                        (click) = "onDelete(proyecto)">
+                    </fa-icon>
+                </button>
+            </div> 
+        </div>
     </div>
 </div>

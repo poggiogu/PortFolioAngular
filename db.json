@@ -24,14 +24,6 @@
   ],
   "edus": [
     {
-      "title": "Udacity",
-      "course": "linear algebra",
-      "year": "2018",
-      "instLogoUrl": "https://i.ibb.co/5M7PPDt/TFJQ7-XKs-Vwe-QUEQn-DHf-LWDIz-Iz94-Um9y6wx-Kudu-Z.webp",
-      "certificadoUrl": "urlcertificado",
-      "id": 2
-    },
-    {
       "title": "Argentina Progragma",
       "course": "se_programar",
       "year": "2021",
@@ -56,38 +48,6 @@
       "fecha": "12/06",
       "urlimagen": "https://cdn.pixabay.com/photo/2016/11/18/21/46/fog-1837025_960_720.jpg",
       "urlrepositorio": "#"
-    },
-    {
-      "id": 3,
-      "nombre": "Peluqueria Canina",
-      "descripcion": "sistema para peluqueria canina",
-      "fecha": "12/06",
-      "urlimagen": "./assets/images/nightSky.jpg",
-      "urlrepositorio": "#"
-    },
-    {
-      "id": 4,
-      "nombre": "Nuevo Proyecto",
-      "descripcion": "",
-      "fecha": "",
-      "urlimagen": "https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1676134779/Dise%C3%B1o%20sin%20t%C3%ADtulo%20%2817%29.png",
-      "urlrepositorio": ""
-    },
-    {
-      "id": 5,
-      "nombre": "Nuevo Proyectootrrtewert",
-      "descripcion": "asdfasdf",
-      "fecha": "asdfasdf",
-      "urlimagen": "asdfasdf",
-      "urlrepositorio": "asdfasdf"
-    },
-    {
-      "id": 6,
-      "nombre": "asfasdf",
-      "descripcion": "asdfasdf",
-      "fecha": "",
-      "urlimagen": "",
-      "urlrepositorio": ""
     }
   ],
   "perfil": [

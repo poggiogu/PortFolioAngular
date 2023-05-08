@@ -8,6 +8,7 @@ import { ProyectService } from 'src/app/services/proyect.service';
   styleUrls: ['./proyecto-element.component.css']
 })
 export class ProyectoElementComponent implements OnInit {
+  
   proyectos:Iproyecto[] = [];
 
   constructor(
@@ -20,27 +21,13 @@ export class ProyectoElementComponent implements OnInit {
   }
 
   deleteProyect(proyecto:Iproyecto) {
+    console.log("deleteProject del componente Proy se ha llamado!")
     this.proyectoService.deleteProyect(proyecto)
     .subscribe( ()=> (
-      this.proyectos = this.proyectos.filter ((p) => {
-        return  p.id !== proyecto.id 
+      this.proyectos = this.proyectos.filter ((e) => {
+        return  e.id !== proyecto.id 
         })
     ))
   }
 
-  addProyect(proyecto:Iproyecto){
-    this.proyectoService.addProyect(proyecto).subscribe((proyecto)=>(
-      this.proyectos.push(proyecto)
-    ))
-  }
-
-
 }
-
-
-
-  
-  
-
-  
-
