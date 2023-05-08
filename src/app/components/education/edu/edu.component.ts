@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Edu } from 'src/app/Edu';
+import { Edu } from 'src/app/iEdu';
 import { Observable, of } from 'rxjs';
 import { HttpClient, HttpHandler } from '@angular/common/http';
 import { EduService } from 'src/app/services/edu.service';

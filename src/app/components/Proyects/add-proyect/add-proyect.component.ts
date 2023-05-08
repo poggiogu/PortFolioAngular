@@ -1,6 +1,5 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { ProyectService } from 'src/app/services/proyect.service';
-import { ProyectUiService } from 'src/app/services/proyect-ui.service';
 import { Iproyecto } from 'src/app/iproyecto';
 
 @Component({
@@ -9,20 +8,20 @@ import { Iproyecto } from 'src/app/iproyecto';
   styleUrls: ['./add-proyect.component.css']
 })
 export class AddProyectComponent {
-  //declaraciones de variables
   [x: string]: any;
   @Output() onAddProyect : EventEmitter<Iproyecto> = new EventEmitter();
+  //inicializacion de las variables
   id:number = 0;
   nombre:string = "";
   descripcion:string = "";
   fecha:string = "";
   urlimagen:string = "";
   urlrepositorio:string = "";
-  proyectos:Iproyecto [] = [];
+  
     
   constructor( 
     private proyectService : ProyectService,
-    private proyectUiService : ProyectUiService
+    //private proyectUiService : ProyectUiService
   ) {}
   
   ngOnInit (): void {}
@@ -40,7 +39,3 @@ export class AddProyectComponent {
   }
 
 }
-
-
-
-

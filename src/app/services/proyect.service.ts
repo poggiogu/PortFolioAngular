@@ -22,7 +22,7 @@ export class ProyectService {
 
   getProyectos(): Observable<Iproyecto[]> {
     return this.http.get<Iproyecto[]>(this.apiUrl);
-  };
+  }
 
   deleteProyect(proyect:Iproyecto): Observable<Iproyecto>{
     const url = `${this.apiUrl}/${proyect.id}`
@@ -32,5 +32,6 @@ export class ProyectService {
   addProyect(proyect:Iproyecto): Observable<Iproyecto> {
     return this.http.post<Iproyecto>(this.apiUrl, proyect, httpOptions)
   }
+
 }
 

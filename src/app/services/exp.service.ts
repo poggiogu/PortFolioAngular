@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs'; //porque es un método asincrónico
-import { Exp } from '../Exp'; //interface
+import { Exp } from '../iExp'; //interface
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 const httpOptions = {

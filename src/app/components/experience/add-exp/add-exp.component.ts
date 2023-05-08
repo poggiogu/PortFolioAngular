@@ -1,14 +1,13 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { Exp } from 'src/app/Exp';
+import { Component, Output, EventEmitter } from '@angular/core';
+import { Exp } from 'src/app/iExp';
 import { ExpService } from 'src/app/services/exp.service';
-import { Subscription } from 'rxjs';
-import { UiService } from 'src/app/services/ui.service';
 
 @Component({
   selector: 'app-add-exp',
   templateUrl: './add-exp.component.html',
   styleUrls: ['./add-exp.component.css']
 })
+
 export class AddExpComponent {
   [x: string]: any;
   @Output() onAddExp : EventEmitter<Exp> = new EventEmitter();
@@ -21,7 +20,7 @@ export class AddExpComponent {
       
   constructor( 
     private expService : ExpService,
-    private uiService:UiService
+    
   ) { };
   ngOnInit (): void {}
   

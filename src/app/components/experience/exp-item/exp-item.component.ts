@@ -1,9 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Exp } from 'src/app/Exp';
+import { Exp } from 'src/app/iExp';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import { faPencil } from '@fortawesome/free-solid-svg-icons';
-import { EXPS } from 'src/app/MockExp';
-
 @Component({
   selector: 'app-exp-item',
   templateUrl: './exp-item.component.html',
@@ -12,7 +10,8 @@ import { EXPS } from 'src/app/MockExp';
 
 export class ExpItemComponent implements OnInit {
   
-  @Input() exp:Exp = EXPS[0];
+  @Input() exp : Exp = {text: "", dates: "", brandLogoUrl:"", cargo:"", id: 0};
+  
   @Output() onDeleteExp : EventEmitter<Exp> = new EventEmitter()
 
   faTrash = faTrash;

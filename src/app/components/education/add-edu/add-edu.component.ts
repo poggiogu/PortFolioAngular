@@ -1,9 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { Edu } from 'src/app/Edu';
+import { Edu } from 'src/app/iEdu';
 import { EduService } from 'src/app/services/edu.service';
-import { Subscription } from 'rxjs';
-import { EduUiService } from 'src/app/services/edu-ui.service';
-
 @Component({
   selector: 'app-add-edu',
   templateUrl: './add-edu.component.html',
@@ -18,12 +15,11 @@ export class AddEduComponent {
   instLogoUrl:string = "";
   certificadoUrl:string = "";
   id : number = 0;
-  edus:Edu[] = [];
+  
     
   constructor( 
     private eduService : EduService,
-    private eduUiService : EduUiService
-  ) {};
+    ) {};
   ngOnInit (): void {}
   
   onSubmit(){
@@ -37,5 +33,3 @@ export class AddEduComponent {
     this.onAddEdu.emit(newEdu)
   }
 }
-
-

@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Iproyecto } from 'src/app/iproyecto';
-import { Observable, of } from 'rxjs';
-import { HttpClient, HttpHandler } from '@angular/common/http';
 import { ProyectService } from 'src/app/services/proyect.service';
 
 @Component({
@@ -17,8 +15,6 @@ export class ProyectoElementComponent implements OnInit {
   ) {}
   
   ngOnInit(): void { 
-    //como una promesa a futuro que el carrousel en este caso va a recibir la data necesaria
-    //para poder construir sus objetos, en este caso cada slide!!
     this.proyectoService.getProyectos().subscribe((proyectos) => 
     (this.proyectos = proyectos)); //método subscribe de los observables
   }
@@ -37,6 +33,7 @@ export class ProyectoElementComponent implements OnInit {
       this.proyectos.push(proyecto)
     ))
   }
+
 
 }
 

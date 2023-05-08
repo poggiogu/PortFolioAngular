@@ -1,6 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Edu } from 'src/app/Edu';
-import { EDUS } from 'src/app/MockExp';
+import { Edu } from 'src/app/iEdu';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import { faPencil } from '@fortawesome/free-solid-svg-icons';
 
@@ -11,7 +10,7 @@ import { faPencil } from '@fortawesome/free-solid-svg-icons';
 })
 export class EduItemComponent implements OnInit {
   
-  @Input() edu:Edu = EDUS[0];
+  @Input() edu:Edu = {title: "", course: "" , year: "", instLogoUrl: "", certificadoUrl:"", id: 0};
   @Output() onDeleteEdu : EventEmitter<Edu> = new EventEmitter()
 
   faTrash = faTrash;

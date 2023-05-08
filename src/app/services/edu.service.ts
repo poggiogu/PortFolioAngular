@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs'; //porque es un método asincrónico
-import { Edu } from '../Edu'; //interface
+import { Edu } from '../iEdu'; //interface
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 const httpOptions = {
