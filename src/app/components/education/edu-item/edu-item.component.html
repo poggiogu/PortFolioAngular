@@ -1,35 +1,40 @@
 <div class="edu-item">   
-    <img [src]="edu.instLogoUrl" style="width:20%" alt="institution logo" >
-        <div class="container">    
-            <div  class="d-flex justify-content-between">
-                <div class="flex">
-                    <h4>
-                        {{edu.title}}
-                    </h4>
-                </div>
-                <div class="flex">
-                    <div class="btn-group" role="group" aria-label="edit-delete">
-                        <button type="button" class="btn btn-dark">
-                            <fa-icon 
-                                    [icon]= "faPencil"
-                                    [ngStyle] = "{'color':'white'}"
-                                    >
-                            </fa-icon>
-                        </button>
-                        <button type="button" class="btn btn-danger">
-                            <fa-icon 
-                                [icon]= "faTrash"
+    <img [src]="edu.instLogoUrl" style="width:15%" alt="institution logo" >
+    <div class="container-fluid">    
+        <div  class="d-flex justify-content-between">
+            <div class="flex">
+                <h4>
+                    {{edu.course}}
+                </h4>
+            </div>
+            <div class="flex">
+                <div class="btn-group" role="group" aria-label="edit-delete">
+                    <button type="button" class="btn btn-dark ">
+                        <fa-icon 
+                                [icon]= "faPencil"
                                 [ngStyle] = "{'color':'white'}"
-                                (click) = "onDelete(edu)">
-                            </fa-icon>
-                        </button>
-                    </div>  
-                </div>
-             </div>
-            <p>{{edu.course}}<span> in {{edu.year}}</span></p>
-            <a title="link al certificado Obtenido" href="#" class="text-dark"> Certificado </a>
+                                >
+                        </fa-icon>
+                    </button>
+                    <button type="button" class="btn btn-danger">
+                        <fa-icon 
+                            [icon]= "faTrash"
+                            [ngStyle] = "{'color':'white'}"
+                            (click) = "onDelete(edu)">
+                        </fa-icon>
+                    </button>
+                </div>  
+            </div>
         </div>
+        <h6>
+            {{edu.title}}
+        </h6>
+        <p>
+            {{edu.descripcion}}
+        </p>
+        <p>        
+            {{edu.year}}
+        </p>
+        <a title="link al certificado Obtenido" href="#" class="text-dark"><b> Certificado </b></a>
     </div>
-
-    
-    
+</div>    

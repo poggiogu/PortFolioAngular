@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Exp } from 'src/app/iExp';
-import { Observable, of } from 'rxjs';
-import { HttpClient, HttpHandler } from '@angular/common/http';
 import { ExpService } from 'src/app/services/exp.service';
 
 @Component({

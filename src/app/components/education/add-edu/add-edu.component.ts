@@ -15,6 +15,7 @@ export class AddEduComponent {
   instLogoUrl:string = "";
   certificadoUrl:string = "";
   id : number = 0;
+  descripcion: string ="";
   
     
   constructor( 
@@ -27,8 +28,8 @@ export class AddEduComponent {
       alert("Por favor agregar un curso!")
       return
     }
-    const {title, course, instLogoUrl, year, certificadoUrl, id} = this 
-    const newEdu = {title, course, instLogoUrl, certificadoUrl, year, id};
+    const {title, course, instLogoUrl, year, certificadoUrl, id, descripcion} = this 
+    const newEdu = {title, course, instLogoUrl, certificadoUrl, year, id, descripcion};
 
     this.onAddEdu.emit(newEdu)
   }

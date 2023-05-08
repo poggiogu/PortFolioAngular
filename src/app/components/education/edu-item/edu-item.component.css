@@ -1,28 +1,24 @@
 .edu-item{
-    max-height:150px;
+    padding:10px;
     display: flex;
     align-items: center;
-    background-color: transparent;
+    background-color: #e1e1e1;
     margin-bottom:20px;
     padding:20px;
     border: 0px;
     border-radius: 10px;
-    box-shadow: 1px 4px 25px 0 rgba(0, 0, 0, 0.2);    
+    box-shadow: 1px 4px 25px 0 rgba(0, 0, 0, 1);    
 }
 .edu-item h4{
-    display: flex;
-    align-items: center;
+
     justify-content: space-between;
     text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
     color:white;
 }
-.container{
-    text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
-    color:black;
-    margin-left: 5%;
-    width:40vw;
-}
 fa-icon{
     margin: 5px;
+}
+.btn{
+    opacity: 0.8;
 }
 

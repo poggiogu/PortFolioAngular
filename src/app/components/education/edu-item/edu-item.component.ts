@@ -10,7 +10,7 @@ import { faPencil } from '@fortawesome/free-solid-svg-icons';
 })
 export class EduItemComponent implements OnInit {
   
-  @Input() edu:Edu = {title: "", course: "" , year: "", instLogoUrl: "", certificadoUrl:"", id: 0};
+  @Input() edu:Edu = {title: "", course: "" , year: "", instLogoUrl: "", certificadoUrl:"", id: 0, descripcion:""};
   
   @Output() onDeleteEdu : EventEmitter<Edu> = new EventEmitter()
 

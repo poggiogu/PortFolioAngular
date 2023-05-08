@@ -4,21 +4,24 @@
       "text": "Nucleoeléctrica Argentina S.A.",
       "dates": "March 2022 to December 2022",
       "brandLogoUrl": "http://chilicote.com.ar/wp-content/uploads/2019/04/nasa-logo.png",
-      "cargo": "cargo",
+      "cargo": "Operador de Gammagrafía",
+      "descripcion":"realizar ensayos no destructivos",
       "id": 4
     },
     {
       "text": "Capital One Credit Card",
       "dates": "February 2006 to December 2009",
       "brandLogoUrl": "https://www.pngfind.com/pngs/m/213-2137829_212-888-capital-one-bank-logo-hd-png.png",
-      "cargo": "cargo",
+      "cargo": "rep. Customer Service",
+      "descripcion":"atencion a clientes residentes en EEUU",
       "id": 5
     },
     {
       "text": "Henisa S.A",
       "dates": "February 2021 to December 2022",
       "brandLogoUrl": "https://ii.ct-stc.com/5/logos/empresas/2016/12/27/6580d460500642faa2cethumbnail.jpeg",
-      "cargo": "cargo",
+      "cargo": "Operador de Gammagrafía",
+      "descripcion":"realizar ensayos no destructivos",
       "id": 1
     }
   ],
@@ -26,11 +29,31 @@
     {
       "title": "Argentina Progragma",
       "course": "se_programar",
+      "descripcion":"Full Stack Developer Jr.",
+      "year": "2021",
+      "instLogoUrl": "https://cdn-sp.radionacional.com.ar/wp-content/uploads/2021/12/Diseno-sin-titulo-1-1.png",
+      "certificadoUrl": "urlcertificado",
+      "id": 3
+    },
+    {
+      "title": "Argentina Progragma",
+      "course": "se_programar",
+      "descripcion": "Full Stack Developer Jr.",
+      "year": "2021",
+      "instLogoUrl": "https://cdn-sp.radionacional.com.ar/wp-content/uploads/2021/12/Diseno-sin-titulo-1-1.png",
+      "certificadoUrl": "urlcertificado",
+      "id": 3
+    },
+    {
+      "title": "Argentina Progragma",
+      "course": "se_programar",
+      "descripcion": "Full Stack Developer Jr.",
       "year": "2021",
       "instLogoUrl": "https://cdn-sp.radionacional.com.ar/wp-content/uploads/2021/12/Diseno-sin-titulo-1-1.png",
       "certificadoUrl": "urlcertificado",
       "id": 3
     }
+
   ],
   "proyectos": [
     {

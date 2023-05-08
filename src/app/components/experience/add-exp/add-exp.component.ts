@@ -16,7 +16,7 @@ export class AddExpComponent {
   brandLogoUrl:string = "";
   cargo:string = "";
   id : number = 0;
-  exps:Exp[] = [];
+  descripcion:string = "";
       
   constructor( 
     private expService : ExpService,
@@ -29,8 +29,8 @@ export class AddExpComponent {
       alert("Por favor agregue una experiencia laboral!")
       return
     }
-    const {text, dates, brandLogoUrl, cargo, id} = this 
-    const newExp = {text, dates, brandLogoUrl, cargo, id};
+    const {text, dates, brandLogoUrl, cargo, id, descripcion} = this 
+    const newExp = {text, dates, brandLogoUrl, cargo, id, descripcion};
 
     this.onAddExp.emit(newExp)
 

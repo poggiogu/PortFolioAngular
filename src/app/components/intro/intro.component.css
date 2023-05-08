@@ -1,6 +1,7 @@
 #back{
     height: 100vh;
     min-width:100vw;
+    padding-bottom:20vh;
     background: url(https://i.ibb.co/cyRZBSv/the-polygon-1562743-960-720.webp) repeat-y center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -56,13 +57,13 @@
     margin-bottom: 20vh;
 }
 #caja_descripcion{
-    margin-top: -1%;
+    margin-top: 0;
     text-shadow: 2px 2px 4px white, 0 0 25px white, 0 0 5px white;
     text-align: center;
-    background-color: transparent;
+    background-color: #e1e1e1;
     border: 0px;
     border-radius: 10px;
-    box-shadow: 1px 4px 25px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 4px 25px 0 rgba(0, 0, 0, 1);
     margin-bottom:30vh;
     min-height: 15vh;
 }

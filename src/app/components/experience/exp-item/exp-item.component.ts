@@ -10,7 +10,7 @@ import { faPencil } from '@fortawesome/free-solid-svg-icons';
 
 export class ExpItemComponent implements OnInit {
   
-  @Input() exp : Exp = {text: "", dates: "", brandLogoUrl:"", cargo:"", id: 0};
+  @Input() exp : Exp = {text: "", dates: "", brandLogoUrl:"", cargo:"", id: 0, descripcion: ""};
   
   @Output() onDeleteExp : EventEmitter<Exp> = new EventEmitter()
 
