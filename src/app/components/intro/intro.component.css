@@ -73,3 +73,13 @@
 h1{
     margin-bottom: 2%;    
 }
+#btn-edit{
+    justify-content: end;
+    opacity:0.8;
+}
+button{
+    margin: 1%;
+}
+fa-icon{
+    margin-left: 3px;
+}

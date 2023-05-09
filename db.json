@@ -5,7 +5,7 @@
       "dates": "March 2022 to December 2022",
       "brandLogoUrl": "http://chilicote.com.ar/wp-content/uploads/2019/04/nasa-logo.png",
       "cargo": "Operador de Gammagrafía",
-      "descripcion":"realizar ensayos no destructivos",
+      "descripcion": "realizar ensayos no destructivos",
       "id": 4
     },
     {
@@ -13,7 +13,7 @@
       "dates": "February 2006 to December 2009",
       "brandLogoUrl": "https://www.pngfind.com/pngs/m/213-2137829_212-888-capital-one-bank-logo-hd-png.png",
       "cargo": "rep. Customer Service",
-      "descripcion":"atencion a clientes residentes en EEUU",
+      "descripcion": "atencion a clientes residentes en EEUU",
       "id": 5
     },
     {
@@ -21,7 +21,7 @@
       "dates": "February 2021 to December 2022",
       "brandLogoUrl": "https://ii.ct-stc.com/5/logos/empresas/2016/12/27/6580d460500642faa2cethumbnail.jpeg",
       "cargo": "Operador de Gammagrafía",
-      "descripcion":"realizar ensayos no destructivos",
+      "descripcion": "realizar ensayos no destructivos",
       "id": 1
     }
   ],
@@ -29,7 +29,7 @@
     {
       "title": "Argentina Progragma",
       "course": "se_programar",
-      "descripcion":"Full Stack Developer Jr.",
+      "descripcion": "Full Stack Developer Jr.",
       "year": "2021",
       "instLogoUrl": "https://cdn-sp.radionacional.com.ar/wp-content/uploads/2021/12/Diseno-sin-titulo-1-1.png",
       "certificadoUrl": "urlcertificado",
@@ -53,7 +53,6 @@
       "certificadoUrl": "urlcertificado",
       "id": 3
     }
-
   ],
   "proyectos": [
     {
@@ -82,6 +81,57 @@
       "text2": "Soy una persona muy adaptable a cualquier equipo de trabajo, aprendo muy rápídamente y soy un excelente autodidacta.",
       "url-foto-perfil": "https://i.ibb.co/hDJ9jGS/foto-guille.jpg",
       "url-foto-banner": "#"
+    }
+  ],
+  "hardSkills": [
+    {
+      "id": 1,
+      "titulo": "Bootstrap",
+      "color": "rgb(132, 31, 169)",
+      "porcentaje": "80",
+      "imagen": "https://i.ibb.co/gFhs2r5/Bootstrap-logo-svg.png"
+    },
+    {
+      "id": 2,
+      "titulo": "Angular",
+      "color": "dark",
+      "porcentaje": "60",
+      "imagen": "https://i.ibb.co/NnKjsvV/angular-solid-Black.png"
+    },
+    {
+      "id": 3,
+      "titulo": "HTML5",
+      "color": "orange",
+      "porcentaje": "90",
+      "imagen": "https://i.ibb.co/gJ4m05f/kisspng-web-development-html-responsive-web-design-cascadi-5ae19e6b7649d5-1239039415247355954845.png"
+    },
+    {
+      "id": 4,
+      "titulo": "Spring Boot",
+      "color": "green",
+      "porcentaje": "65",
+      "imagen": "https://i.ibb.co/st9NNYP/spring-boot.png"
+    },
+    {
+      "id": 5,
+      "titulo": "Javascript",
+      "color": "yellow",
+      "porcentaje": "75",
+      "imagen": "https://i.ibb.co/CQCzm26/kisspng-javascript-angularjs-node-js-computer-icons-clip-a-clipart-js-5c0d8281ca7a10-350795211544389.png"
+    },
+    {
+      "id": 6,
+      "titulo": "MySQL",
+      "color": "blue",
+      "porcentaje": "80",
+      "imagen": "https://i.ibb.co/mR4jc1n/Daco-5438423.png"
+    },
+    {
+      "id": 7,
+      "titulo": "Java",
+      "color": "red",
+      "porcentaje": "60",
+      "imagen": "https://i.ibb.co/jbqwpHy/pngwing-com.png"
     }
   ]
 }

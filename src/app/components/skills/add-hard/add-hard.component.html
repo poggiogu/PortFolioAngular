@@ -1,0 +1,55 @@
+<form 
+    class="add-form"   
+    (ngSubmit)="onSubmit()"
+    class="mb-3" Style="margin:20px">
+    <h3>
+        Nuevo Proyecto 
+    </h3>
+    <div class="mb-3">
+        <label  for="titulo">Nombre para la skill</label>
+        <input
+            class="form-control" 
+            type="text" 
+            name="titulo" 
+            id="titulo" 
+            placeholder="'HTML5'" 
+            [(ngModel)] = "titulo"
+        />
+    </div>
+    <div class="mb-3">
+        <label  for="color">Color de la barra</label>
+        <input 
+            class="form-control"
+            type="text" 
+            name="descripcion" 
+            id="text" 
+            placeholder="'verde'" 
+            [(ngModel)] = "color"
+        />
+    </div>
+    <div class="mb-3">
+        <label for="porcentaje">porcentaje sin %</label>
+        <input 
+            class="form-control"
+            type="text" 
+            name="porcentaje" 
+            id="porcentaje" 
+            placeholder="'80'" 
+            [(ngModel)] = "porcentaje"
+        />
+    </div>
+    <div class="mb-3">
+        <label for="imagen">url icono en .png</label>
+        <input 
+            class="form-control"
+            type="text" 
+            name="imagen" 
+            id="imagen" 
+            placeholder="'https://...'"
+            [(ngModel)] = "imagen"
+        />
+    </div>
+    <div class="d-flex  mb-12 lg-12 sm-12">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+</form>

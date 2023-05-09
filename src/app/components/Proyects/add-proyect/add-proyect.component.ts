@@ -21,7 +21,7 @@ export class AddProyectComponent {
     
   constructor( 
     private proyectService : ProyectService,
-    //private proyectUiService : ProyectUiService
+    
   ) {}
   
   ngOnInit (): void {}

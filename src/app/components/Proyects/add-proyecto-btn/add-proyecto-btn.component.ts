@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Iproyecto } from 'src/app/iproyecto';
-import { Observable, of } from 'rxjs';
-import { HttpClient, HttpHandler } from '@angular/common/http';
 import { ProyectService } from 'src/app/services/proyect.service';
 
 @Component({

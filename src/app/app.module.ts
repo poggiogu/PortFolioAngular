@@ -5,10 +5,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { SkillBarsComponent } from './components/skill-bars/skill-bars.component';
 import { Error404Component } from './components/error404/error404.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { IntroComponent } from './components/intro/intro.component';
@@ -32,8 +32,13 @@ import { ProyectoElementComponent } from './components/Proyects/proy/proyecto-el
 import { AddProyectComponent } from './components/Proyects/add-proyect/add-proyect.component';
 import { ExperienciasLaboralesComponent } from './components/experience/experiencias-laborales/experiencias-laborales.component';
 import { FormacionCursosComponent } from './components/education/formacion-cursos/formacion-cursos.component';
-import { SkillsComponent } from './components/skills/skills/skills.component';
-
+import { SkillsComponent } from './components/skills/hardSkills/skills.component';
+import { HardSkillItemComponent } from './components/skills/hard-skill-item/hard-skill-item.component';
+import { BtnHardComponent } from './components/skills/btn-hard/btn-hard.component';
+import { AddHardComponent } from './components/skills/add-hard/add-hard.component';
+import { HardComponent } from './components/skills/hard/hard.component';
+import { SoftSkillsComponent } from './components/soft-skills/soft-skills.component';
+import { IdiomasComponent } from './components/idiomas/idiomas.component';
 
 
 const appRoutes: Routes = [
@@ -43,12 +48,10 @@ const appRoutes: Routes = [
   {path: 'iniciar-sesion', component: IniciarSesionComponent},
   {path: '', redirectTo:'portfolio', pathMatch:'full'}
 ]
-
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    SkillBarsComponent,
     Error404Component,
     FooterComponent,
     IntroComponent,
@@ -73,6 +76,12 @@ const appRoutes: Routes = [
     ExperienciasLaboralesComponent,
     FormacionCursosComponent,
     SkillsComponent,
+    HardSkillItemComponent,
+    BtnHardComponent,
+    AddHardComponent,
+    HardComponent,
+    SoftSkillsComponent,
+    IdiomasComponent,
 ],
   imports: [
     BrowserModule,
@@ -81,6 +90,18 @@ const appRoutes: Routes = [
     FormsModule,
     RouterModule.forRoot(appRoutes, {enableTracing:true}),
     ReactiveFormsModule,
+    // Specify ng-circle-progress as an import
+    NgCircleProgressModule.forRoot({
+      // set defaults here
+      radius: 100,
+      outerStrokeWidth: 16,
+      innerStrokeWidth: 8,
+      outerStrokeColor: "#78C000",
+      innerStrokeColor: "#C7E596",
+      animationDuration: 300,
+      
+      
+    })
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,11 +1,5 @@
 <div class="container-fluid" id="back">
     <div class="d-flex" id="banner">
-      <div class="flex-grow-1" id="acercademi">
-        <h1>{{title}}</h1>
-        <h4 id="arriba">
-          {{text1}}
-        </h4>
-      </div>
     </div>
     <div class="d-flex justify-content-arround" id="card" >
       <div class="flex" id="image">
@@ -21,12 +15,27 @@
       </div>
       <div class="flex-grow p-2 m-1" id="fondo_caja">
           <div class="flex-grow p-2" id="caja_descripcion">
-            <p id="texto_desc">  
-              {{text2}}
-            </p>     
-          </div>
+            <h6 id="texto_desc">  
+              {{acercaDeMi}}
+            </h6>
+            <div class="d-flex" id="btn-edit">
+                <button type="button" class="btn btn-dark">
+                    <div class="flex-fill">  
+                      <h6>
+                        Editar Perfil
+                        <fa-icon 
+                              [icon]= "faPencil"
+                              [ngStyle] = "{'color':'white'}"
+                              >
+                        </fa-icon>
+                      </h6>
+                    </div>
+                </button> 
+              </div>
+          </div>   
       </div>
   </div>
 </div>
+
 
 

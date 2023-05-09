@@ -1,0 +1,13 @@
+.container{
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+h4{
+    text-shadow: 2px 2px 10px black, 0 0 25px black, 0 0 25px black;
+    color:white;
+}
+.btn-group{
+    opacity:0.8;
+    margin-top:1%;
+}

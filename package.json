@@ -30,6 +30,7 @@
     "bootstrap": "^5.2.3",
     "chart.js": "^3.1.1",
     "json-server": "^0.17.3",
+    "ng-circle-progress": "^1.7.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"

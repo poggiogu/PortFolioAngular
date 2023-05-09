@@ -1,12 +1,11 @@
 <form 
     class="add-form"   
     (ngSubmit)="onSubmit()"
-    class="sm-8 mb-6 lg-4" 
-    Style="margin:5%">
+    class="mb-3" Style="margin:20px">
     <h3>
         Nueva Experiencia Laboral
     </h3>
-    <div>
+    <div class="mb-3">
         <label for="text">Nombre de la Empresa</label>
         <input
             class="form-control" 
@@ -17,7 +16,7 @@
             [(ngModel)] = "text"
         />
     </div>
-    <div>
+    <div class="mb-3">
         <label for="cargo">Cargo / Posición</label>
         <input 
             class="form-control"
@@ -28,7 +27,7 @@
             [(ngModel)] = "text"
         />
     </div>
-    <div>
+    <div class="mb-3">
         <label for="descripcion">Descripcion de Actividades</label>
         <input 
             class="form-control"
@@ -39,7 +38,7 @@
             [(ngModel)] = "text"
         />
     </div>
-    <div>
+    <div class="mb-3">
         <label for="dates">Período</label>
         <input 
             class="form-control"
@@ -50,7 +49,7 @@
             [(ngModel)] = "dates"
         />
     </div>
-    <div >
+    <div class="mb-3">
         <label for="logo">Url Logo de la Empresa</label>
         <input 
             class="form-control"

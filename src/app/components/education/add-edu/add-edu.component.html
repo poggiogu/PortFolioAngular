@@ -1,12 +1,11 @@
 <form 
     class="add-form"   
     (ngSubmit)="onSubmit()"
-    class="sm-8 mb-6 lg-4"
-    Style="margin:5%">
+    class="mb-3" Style="margin:20px">
     <h3>
         Nuevo Curso
     </h3>
-    <div>
+    <div class="mb-3">
         <label for="title">Nombre de la Institución</label>
         <input
             class="form-control" 
@@ -17,7 +16,7 @@
             [(ngModel)] = "title"
         />
     </div>
-    <div>
+    <div class="mb-3">
         <label for="course">Courso / Grado</label>
         <input 
             class="form-control"
@@ -28,7 +27,7 @@
             [(ngModel)] = "course"
         />
     </div>
-    <div>
+    <div class="mb-3">
         <label for="descripcion">Breve descripcion</label>
         <input
             class="form-control" 
@@ -39,7 +38,7 @@
             [(ngModel)] = "year"
         />
     </div>
-    <div>
+    <div class="mb-3">
         <label for="year">Año</label>
         <input
             class="form-control" 
@@ -50,7 +49,7 @@
             [(ngModel)] = "year"
         />
     </div>
-    <div>
+    <div class="mb-3">
         <label for="certificadoUrl">Url certificado</label>
         <input 
             class="form-control"
@@ -61,7 +60,7 @@
             [(ngModel)] = "certificadoUrl"
         />
     </div>
-    <div>
+    <div class="mb-3">
         <label for="logo">Url del logo de la institución </label>
         <input
             class="form-control" 

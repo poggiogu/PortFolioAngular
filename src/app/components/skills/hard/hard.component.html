@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row">
+        <app-hard-skill-item
+                class="col-md-3 my-4"
+                *ngFor="let hardSkill of hardSkills"
+                [hardSkill] = "hardSkill"
+                (onDeleteSkill)="deleteSkill(hardSkill)"
+        ></app-hard-skill-item>
+    </div>    
+</div>
+
