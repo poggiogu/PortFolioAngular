@@ -19,6 +19,10 @@ export class PerfilService {
     private http:HttpClient
   ) { }
   
+  getPerfil(): Observable<iPerfil[]> {
+    return this.http.get<iPerfil[]>(this.apiUrl);
+  };
+
   deletePerfil(perfil:iPerfil): Observable<iPerfil>{
     const url = `${this.apiUrl}/${perfil.id}`;
     return this.http.delete<iPerfil>(url);
@@ -28,9 +32,10 @@ export class PerfilService {
     return this.http.post<iPerfil>(this.apiUrl, perfil, httpOptions);
   }
 
-  updateProyect(perfil : iPerfil): Observable<iPerfil> {
+  updatePerfil(perfil : iPerfil): Observable<iPerfil> {
     const url = `${this.apiUrl}/${perfil.id}`
-    return this.http.put<iPerfil>(url, perfil, httpOptions)
+    return this.http.put<iPerfil>(url, perfil, httpOptions);
   }
 
 }
+

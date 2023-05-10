@@ -16,6 +16,7 @@ export class ProyectoElementComponent implements OnInit {
   ) {}
   
   ngOnInit(): void { 
+    //como una promesa
     this.proyectoService.getProyectos().subscribe((proyectos) => 
     (this.proyectos = proyectos)); //método subscribe de los observables
   }

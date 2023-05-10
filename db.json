@@ -1,20 +1,20 @@
 {
   "exps": [
     {
+      "id": 4,
       "text": "Nucleoeléctrica Argentina S.A.",
-      "dates": "March 2022 to December 2022",
-      "brandLogoUrl": "http://chilicote.com.ar/wp-content/uploads/2019/04/nasa-logo.png",
       "cargo": "Operador de Gammagrafía",
       "descripcion": "realizar ensayos no destructivos",
-      "id": 4
+      "dates": "March 2022 to December 2022",
+      "brandLogoUrl": "https://i.ibb.co/fkZKhd8/91505850-3492524657441082-4180020420537221120-n.png"
     },
     {
+      "id": 5,
       "text": "Capital One Credit Card",
-      "dates": "February 2006 to December 2009",
-      "brandLogoUrl": "https://www.pngfind.com/pngs/m/213-2137829_212-888-capital-one-bank-logo-hd-png.png",
       "cargo": "rep. Customer Service",
       "descripcion": "atencion a clientes residentes en EEUU",
-      "id": 5
+      "dates": "February 2006 to December 2009",
+      "brandLogoUrl": "https://i.ibb.co/zhcTF2k/I6ff-Wyrd-400x400.jpg"
     },
     {
       "text": "Henisa S.A",
@@ -74,13 +74,12 @@
   ],
   "perfil": [
     {
+      "id": 1,
       "nombre": "Guillermo Poggioni",
-      "titulo": "Full Stack Jr. Web Developer",
-      "title": "</Hola, soy Guillermo>",
-      "text1": "Un full stack Jr web developer de la provincia de Córdoba, Argentina, y en este portfolio van a encontrar un poco de mi formación educativa, experiencias laborales y algunos de mis proyectos.",
-      "text2": "Soy una persona muy adaptable a cualquier equipo de trabajo, aprendo muy rápídamente y soy un excelente autodidacta.",
-      "url-foto-perfil": "https://i.ibb.co/hDJ9jGS/foto-guille.jpg",
-      "url-foto-banner": "#"
+      "titulo": "Full Stack Developer Jr.",
+      "acercaDeMi": "...Soy un apasionado de la tecnología, tengo excelente manejo del portugués y el inglés, pero principalmente me encantan los nuevos desafíos y seguir aprendiendo constantemente...",
+      "urlImagenPerfil": "https://i.ibb.co/hDJ9jGS/foto-guille.jpg",
+      "urlImagenBanner": "https://i.gifer.com/origin/2b/2bd6409223f135eefa87607dab8d12ef.gif"
     }
   ],
   "hardSkills": [
@@ -94,16 +93,16 @@
     {
       "id": 2,
       "titulo": "Angular",
-      "color": "dark",
+      "color": "red",
       "porcentaje": "60",
-      "imagen": "https://i.ibb.co/NnKjsvV/angular-solid-Black.png"
+      "imagen": "https://i.ibb.co/V3nL68h/angular-icon-logo-1.png"
     },
     {
       "id": 3,
       "titulo": "HTML5",
       "color": "orange",
       "porcentaje": "90",
-      "imagen": "https://i.ibb.co/gJ4m05f/kisspng-web-development-html-responsive-web-design-cascadi-5ae19e6b7649d5-1239039415247355954845.png"
+      "imagen": "https://i.ibb.co/SVRvNsM/5352-html5-102567.png"
     },
     {
       "id": 4,
@@ -117,14 +116,14 @@
       "titulo": "Javascript",
       "color": "yellow",
       "porcentaje": "75",
-      "imagen": "https://i.ibb.co/CQCzm26/kisspng-javascript-angularjs-node-js-computer-icons-clip-a-clipart-js-5c0d8281ca7a10-350795211544389.png"
+      "imagen": "https://i.ibb.co/nmJZdCw/kisspng-react-javascript-redux-vue-js-angular-javascript-jquery-5bfa71f2d1fc87-538150021543139826860.png"
     },
     {
       "id": 6,
       "titulo": "MySQL",
       "color": "blue",
       "porcentaje": "80",
-      "imagen": "https://i.ibb.co/mR4jc1n/Daco-5438423.png"
+      "imagen": "https://i.ibb.co/rZJ1vM9/logo-mysql-26353.png"
     },
     {
       "id": 7,

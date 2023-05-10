@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { faPencil } from '@fortawesome/free-solid-svg-icons';
-
+import { iPerfil } from 'src/app/iPerfil';
+import { PerfilService } from 'src/app/services/perfil.service';
 @Component({
   selector: 'app-intro',
   templateUrl: './intro.component.html',
@@ -8,16 +9,16 @@ import { faPencil } from '@fortawesome/free-solid-svg-icons';
 })
 export class IntroComponent implements OnInit{
 
+  @Input() perfil:iPerfil = {id:0, nombre:"", titulo: "", acercaDeMi : "", urlImagenPerfil : "", urlImagenBanner : ""};
+
   faPencil = faPencil
 
-  acercaDeMi: string = "...Soy un apasionado de la tecnología, tengo excelente manejo del portugués y el inglés, pero principalmente me encantan los nuevos desafíos y seguir aprendiendo constantemente...";
-  nombre: string = "Guillermo Poggioni"
-  titulo: string = "Full Stack Developer Jr."
-  urlImagenPerfil: string = ""
-  urlImagenBanner: string = ""
-  constructor(){};
+  constructor(
+    private perfilService : PerfilService
+  ){};
 
-  ngOnInit(): void {};
-  
+  ngOnInit(): void {
+    
+  };
 
 }

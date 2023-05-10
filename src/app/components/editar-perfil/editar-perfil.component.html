@@ -1,0 +1,67 @@
+<form 
+    (ngSubmit)="onSubmit()"
+    class="edit-form"   
+    Style="margin:20px; min-width: 300px;"
+    >
+    <h3>
+        Editar Perfil
+    </h3>
+    <div class="mb-3">
+        <label  for="nombre">Nombre</label>
+        <input
+            class="form-control" 
+            type="text" 
+            name="nombre" 
+            id="nombre" 
+            placeholder="'Guillermo Poggioni'" 
+            [(ngModel)]="perfil.nombre"
+        />
+    </div>
+    <div class="mb-3">
+        <label  for="titulo">Titulo</label>
+        <input 
+            class="form-control"
+            type="text" 
+            name="titulo" 
+            id="titulo" 
+            placeholder="'Full Stack Developer Jr.'" 
+            [(ngModel)]="perfil.titulo"
+        />
+    </div>
+    <div class="mb-3">
+        <label for="acercaDeMi">Sobre mi</label>
+        <input 
+            class="form-control"
+            type="text" 
+            name="acercaDeMi" 
+            id="acercaDeMi" 
+            placeholder="'Soy una persona que...'" 
+            [(ngModel)]="perfil.acercaDeMi"
+        />
+    </div>
+    <div class="mb-3">
+        <label for="urlImagenPerfil">Url Imagen de Perfil</label>
+        <input 
+            class="form-control"
+            type="text" 
+            name="urlImagenPerfil" 
+            id="urlImagenPerfil" 
+            placeholder="'https://...'"
+            [(ngModel)]="perfil.urlImagenPerfil"
+        />
+    </div>
+    <div class="mb-3">
+        <label for="urlImagenBanner">Url Imagen del banner</label>
+        <input 
+            class="form-control"
+            type="text" 
+            name="urlImagenBanner" 
+            id="urlImagenBanner" 
+            placeholder="'https://...'"
+            [(ngModel)]="perfil.urlImagenBanner"
+        />
+    </div>
+    <div class="d-flex  mb-12 lg-12 sm-12">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+</form>

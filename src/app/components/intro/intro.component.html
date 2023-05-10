@@ -1,41 +1,46 @@
 <div class="container-fluid" id="back">
-    <div class="d-flex" id="banner">
+  <div
+      class="d-flex" 
+      id="banner" 
+      [ngStyle]="{
+                  'background':'url('+ perfil.urlImagenBanner +')repeat-y center center fixed',
+                  '-webkit-background-size':'cover',
+                  '-moz-background-size':'cover',
+                  '-o-background-size':'cover',
+                  'background-size':'cover'}">
     </div>
     <div class="d-flex justify-content-arround" id="card" >
       <div class="flex" id="image">
-          <img class="rounded-pill" src="https://i.ibb.co/hDJ9jGS/foto-guille.jpg" alt="foto perfil">
+          <img class="rounded-pill" [src]="perfil.urlImagenPerfil" alt="foto perfil">
             <h5>
               <b>
-                {{nombre}}
+                {{perfil.nombre}}
               </b>
             </h5>
             <p>
-              {{titulo}}
+              {{perfil.titulo}}
             </p>
       </div>
       <div class="flex-grow p-2 m-1" id="fondo_caja">
           <div class="flex-grow p-2" id="caja_descripcion">
             <h6 id="texto_desc">  
-              {{acercaDeMi}}
+              {{perfil.acercaDeMi}}
             </h6>
             <div class="d-flex" id="btn-edit">
-                <button type="button" class="btn btn-dark">
-                    <div class="flex-fill">  
-                      <h6>
-                        Editar Perfil
-                        <fa-icon 
-                              [icon]= "faPencil"
-                              [ngStyle] = "{'color':'white'}"
-                              >
-                        </fa-icon>
-                      </h6>
-                    </div>
-                </button> 
+              <button type="button" 
+                      class="btn dropdown-toggle btn-transparent"
+                      data-bs-toggle="dropdown">
+                  <fa-icon [icon]= "faPencil"
+                           Style = "color:black">
+                  </fa-icon>                                  
+              </button>
+              <div class="dropdown-menu" >
+                    <app-editar-perfil
+                      [perfil]="perfil"
+                    ></app-editar-perfil>
               </div>
+            </div>
           </div>   
       </div>
   </div>
 </div>
-
-
-

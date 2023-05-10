@@ -17,8 +17,6 @@ export class ProyectoComponent implements OnInit{
 
   @Output() onDeleteProyect : EventEmitter<Iproyecto> = new EventEmitter()
 
-  @Output() onGuardarCambios : EventEmitter<Iproyecto> = new EventEmitter()
-
   faTrash = faTrash;
   faPencil = faPencil;
 
@@ -35,7 +33,5 @@ export class ProyectoComponent implements OnInit{
     console.log("onDelete de proyecto-item se ha llamado!")
     this.onDeleteProyect.emit(proyecto)
   }; 
-  
-  
 
 }

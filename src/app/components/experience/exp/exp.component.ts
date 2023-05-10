@@ -14,6 +14,7 @@ export class ExpComponent implements OnInit {
   constructor(
     private expService : ExpService
   ) {}
+
   
   ngOnInit(): void { 
     //como una promesa

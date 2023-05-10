@@ -43,6 +43,8 @@ import { EditProyectComponent } from './components/Proyects/edit-proyect/edit-pr
 import { EditHardSkillComponent } from './components/skills/edit-hard-skill/edit-hard-skill.component';
 import { EditEduComponent } from './components/education/edit-edu/edit-edu.component';
 import { EditExpComponent } from './components/experience/edit-exp/edit-exp.component';
+import { EditarPerfilComponent } from './components/editar-perfil/editar-perfil.component';
+import { PerfilComponent } from './components/perfil/perfil.component';
 
 
 const appRoutes: Routes = [
@@ -90,6 +92,8 @@ const appRoutes: Routes = [
     EditHardSkillComponent,
     EditEduComponent,
     EditExpComponent,
+    EditarPerfilComponent,
+    PerfilComponent,
 ],
   imports: [
     BrowserModule,
