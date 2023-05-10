@@ -57,17 +57,17 @@
   "proyectos": [
     {
       "id": 1,
-      "nombre": "Portfolio",
-      "descripcion": "un portfolio personal resposivo y editable",
-      "fecha": "12/06",
+      "nombre": "Mi Portfolio",
+      "descripcion": "portfolio personal editable",
+      "fecha": "mayo 2023",
       "urlimagen": "https://cdn.pixabay.com/photo/2016/09/14/15/48/usa-1669704_960_720.jpg",
       "urlrepositorio": "#"
     },
     {
       "id": 2,
-      "nombre": "My Task List",
+      "nombre": "Mi Lista de Tareas",
       "descripcion": "una lista de tareas simple con alarma",
-      "fecha": "12/06",
+      "fecha": "diciembre 2020",
       "urlimagen": "https://cdn.pixabay.com/photo/2016/11/18/21/46/fog-1837025_960_720.jpg",
       "urlrepositorio": "#"
     }

@@ -34,4 +34,9 @@ export class HardSkillServiceService {
     return this.http.post<iHardSkill>(this.apiUrl, hardSkill, httpOptions)
   }
   
+  updateHardSkill(hardSkill : iHardSkill): Observable<iHardSkill> {
+    const url = `${this.apiUrl}/${hardSkill.id}`
+    return this.http.put<iHardSkill>(url, hardSkill, httpOptions)
+  }
+
 }

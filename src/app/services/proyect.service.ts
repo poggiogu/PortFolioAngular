@@ -24,13 +24,23 @@ export class ProyectService {
     return this.http.get<Iproyecto[]>(this.apiUrl);
   }
 
-  deleteProyect(proyect:Iproyecto): Observable<Iproyecto>{
+  getProyect(proyect:Iproyecto):Observable<Iproyecto> {
     const url = `${this.apiUrl}/${proyect.id}`
-    return this.http.delete<Iproyecto>(url)
+    return this.http.get<Iproyecto>(url);
+  }
+
+  deleteProyect(proyect:Iproyecto): Observable<Iproyecto>{
+    const url = `${this.apiUrl}/${proyect.id}`;
+    return this.http.delete<Iproyecto>(url);
   }
 
   addProyect(proyect:Iproyecto): Observable<Iproyecto> {
-    return this.http.post<Iproyecto>(this.apiUrl, proyect, httpOptions)
+    return this.http.post<Iproyecto>(this.apiUrl, proyect, httpOptions);
   }
 
+  updateProyect(proyect : Iproyecto): Observable<Iproyecto> {
+    const url = `${this.apiUrl}/${proyect.id}`
+    return this.http.put<Iproyecto>(url, proyect, httpOptions)
+  }
+  
 }

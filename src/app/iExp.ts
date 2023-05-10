@@ -6,3 +6,4 @@ export interface Exp {
     dates:string;
     brandLogoUrl:string;
 }
+

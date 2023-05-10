@@ -1,9 +1,8 @@
 <form 
     (ngSubmit)="onSubmit()"
-    class="mb-3"
-    Style="margin:20px; min-width: 300px;">
+    class="mb-3" Style="margin:20px; min-width: 300px;">
     <h3>
-        Nuevo Curso
+        Editar Curso
     </h3>
     <div class="mb-3">
         <label for="title">Nombre de la Institución</label>
@@ -13,7 +12,7 @@
             name="title" 
             id="title" 
             placeholder="'Nombre de la institución'" 
-            [(ngModel)] = "title"
+            [(ngModel)]="edu.title"
         />
     </div>
     <div class="mb-3">
@@ -24,7 +23,7 @@
             name="course" 
             id="course" 
             placeholder="'Course/Degree'" 
-            [(ngModel)] = "course"
+            [(ngModel)]="edu.course"
         />
     </div>
     <div class="mb-3">
@@ -35,7 +34,7 @@
             name="descripcion" 
             id="descripcion" 
             placeholder="'breve descripcion'"
-            [(ngModel)] = "year"
+            [(ngModel)]="edu.year"
         />
     </div>
     <div class="mb-3">
@@ -46,7 +45,7 @@
             name="year" 
             id="year" 
             placeholder="'2018'"
-            [(ngModel)] = "year"
+            [(ngModel)]="edu.year"
         />
     </div>
     <div class="mb-3">
@@ -57,7 +56,7 @@
             name="certificadoUrl" 
             id="certificadoUrl" 
             placeholder="'https://...'"
-            [(ngModel)] = "certificadoUrl"
+            [(ngModel)]="edu.certificadoUrl"
         />
     </div>
     <div class="mb-3">
@@ -68,7 +67,7 @@
             name="instLogoUrl"
             id="logo"
             placeholder="'https://www...'"
-            [(ngModel)] = "instLogoUrl"
+            [(ngModel)]="edu.instLogoUrl"
         />
     </div>
     <div class="d-flex  mb-12 lg-12 sm-12">

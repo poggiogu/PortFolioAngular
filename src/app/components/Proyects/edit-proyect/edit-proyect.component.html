@@ -1,12 +1,11 @@
 <form 
-    class="add-form"   
     (ngSubmit)="onSubmit()"
-    class="md-4" 
-    Style="margin:20px">
+    class="edit-form"   
+    Style="margin:20px; min-width: 300px;">
     <h3>
-        Nuevo Proyecto 
+        Editar Proyecto 
     </h3>
-    <div class="">
+    <div class="mb-3">
         <label  for="nombre">Nombre del Proyecto</label>
         <input
             class="form-control" 
@@ -14,21 +13,21 @@
             name="nombre" 
             id="nombre" 
             placeholder="'Nombre del Proyecto'" 
-            [(ngModel)] = "nombre"
+            [(ngModel)]="proyecto.nombre"
         />
     </div>
-    <div class="">
+    <div class="mb-3">
         <label  for="descripcion">Descripción</label>
         <input 
             class="form-control"
             type="text" 
             name="descripcion" 
             id="text" 
-            placeholder="'de que se trata el proyecto'" 
-            [(ngModel)] = "descripcion"
+            placeholder="de que se trata el proyecto" 
+            [(ngModel)]="proyecto.descripcion"
         />
     </div>
-    <div class="">
+    <div class="mb-3">
         <label for="fecha">Mes y Año de realización</label>
         <input 
             class="form-control"
@@ -36,10 +35,10 @@
             name="fecha" 
             id="fecha" 
             placeholder="'Junio 2018'" 
-            [(ngModel)] = "fecha"
+            [(ngModel)]="proyecto.fecha"
         />
     </div>
-    <div class="">
+    <div class="mb-3">
         <label for="urlimagen">Url de captura del proyecto</label>
         <input 
             class="form-control"
@@ -47,10 +46,10 @@
             name="urlimagen" 
             id="urlimagen" 
             placeholder="'https://...'"
-            [(ngModel)] = "urlimagen"
+            [(ngModel)]="proyecto.urlimagen"
         />
     </div>
-    <div class="">
+    <div class="mb-3">
         <label for="reminder">Url del repositorio</label>
         <input 
             class="form-control"
@@ -58,7 +57,7 @@
             name="urlrepositorio"
             id="urlrepositorio"
             placeholder="'https://...'"
-            [(ngModel)] = "urlrepositorio"
+            [(ngModel)]="proyecto.urlrepositorio"
         />
     </div>
     <div class="d-flex  mb-12 lg-12 sm-12">

@@ -9,17 +9,23 @@
             </div>
             <div class="flex">
                 <div class="btn-group" role="group" aria-label="edit-delete">
-                    <button type="button" class="btn btn-dark">
-                        <fa-icon 
-                                [icon]= "faPencil"
-                                [ngStyle] = "{'color':'white'}"
-                                >
-                        </fa-icon>
+                    <button 
+                        type="button" 
+                        class="btn dropdown-toggle btn-transparent"
+                        data-bs-toggle="dropdown">
+                        <fa-icon [icon]= "faPencil"
+                                    style="color:black"
+                        ></fa-icon>
                     </button>
-                    <button type="button" class="btn btn-danger">
+                    <div class="dropdown-menu" >
+                        <app-edit-exp
+                            [exp]="exp"
+                        ></app-edit-exp>
+                    </div>
+                    <button type="button" class="btn btn-transparent">
                         <fa-icon 
                             [icon]= "faTrash"
-                            [ngStyle] = "{'color':'white'}"
+                            [ngStyle] = "{'color':'black'}"
                             (click) = "onDelete(exp)">
                         </fa-icon>
                     </button>

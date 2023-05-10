@@ -32,4 +32,9 @@ export class EduService {
   addEdu(edu:Edu): Observable<Edu> {
     return this.http.post<Edu>(this.apiUrl, edu, httpOptions)
   }
+
+  updateEdu(edu : Edu): Observable<Edu> {
+    const url = `${this.apiUrl}/${edu.id}`
+    return this.http.put<Edu>(url, edu, httpOptions)
+  }
 }

@@ -19,22 +19,29 @@
     </ul>
     <div class="card-body"> 
         <div class="d-flex  mb-12 lg-12 sm-12">
-            <div class="btn-group " role="group" aria-label="edit-delete">
-                <button type="button" class="btn btn-dark">
-                    <fa-icon 
-                            [icon]= "faPencil"
-                            [ngStyle] = "{'color':'white'}"
-                            >
-                    </fa-icon>
+            <div class="btn-group " 
+                 role="group" 
+                 aria-label="edit-delete">
+                <button type="button" 
+                        class="btn dropdown-toggle btn-transparent"
+                        data-bs-toggle="dropdown">
+                    <fa-icon [icon]= "faPencil"
+                             style="color:black"
+                    ></fa-icon>
                 </button>
-                <button type="button" class="btn btn-danger">
-                    <fa-icon 
-                        [icon]= "faTrash"
-                        [ngStyle] = "{'color':'white'}"
-                        (click) = "onDelete(proyecto)">
+                <div class="dropdown-menu" >
+                    <app-edit-proyect 
+                    [proyecto]="proyecto"
+                    ></app-edit-proyect>
+                  </div>
+                <button type="button" class="btn btn-transparent">
+                    <fa-icon [icon]= "faTrash"
+                             style="color:black"
+                             (click) = "onDelete(proyecto)">
                     </fa-icon>
                 </button>
             </div> 
         </div>
     </div>
 </div>
+<!--</app-add-proyect> (onUpdateProyect) = "updateProyect($event)"-->

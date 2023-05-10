@@ -1,9 +1,9 @@
 <form 
     (ngSubmit)="onSubmit()"
     class="mb-3" 
-    Style="margin:20px; min-width: 300px;">
+    Style="margin:20px; min-width:300px;">
     <h3>
-        Nueva Experiencia Laboral
+        Editar Experiencia Laboral
     </h3>
     <div class="mb-3">
         <label for="text">Nombre de la Empresa</label>
@@ -13,7 +13,7 @@
             name="text" 
             id="text" 
             placeholder="'Nombre de la Empresa'" 
-            [(ngModel)] = "text"
+            [(ngModel)]="exp.text"
         />
     </div>
     <div class="mb-3">
@@ -24,7 +24,7 @@
             name="cargo" 
             id="text" 
             placeholder="'Cargo'" 
-            [(ngModel)] = "text"
+            [(ngModel)]="exp.text"
         />
     </div>
     <div class="mb-3">
@@ -35,7 +35,7 @@
             name="descripcion" 
             id="descripcion" 
             placeholder="'descripcion de actividades'" 
-            [(ngModel)] = "text"
+            [(ngModel)]="exp.text"
         />
     </div>
     <div class="mb-3">
@@ -46,7 +46,7 @@
             name="dates" 
             id="dates" 
             placeholder="'Junio 2018 - Marzo 2020'"
-            [(ngModel)] = "dates"
+            [(ngModel)]="exp.dates"
         />
     </div>
     <div class="mb-3">
@@ -57,7 +57,7 @@
             name="brandLogoUrl"
             id="logo"
             placeholder="'https://www...'"
-            [(ngModel)] = "brandLogoUrl"
+            [(ngModel)]="exp.brandLogoUrl"
         />
     </div>
     <div class="d-flex  mb-12 lg-12 sm-12">

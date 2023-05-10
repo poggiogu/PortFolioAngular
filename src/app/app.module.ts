@@ -39,6 +39,10 @@ import { AddHardComponent } from './components/skills/add-hard/add-hard.componen
 import { HardComponent } from './components/skills/hard/hard.component';
 import { SoftSkillsComponent } from './components/soft-skills/soft-skills.component';
 import { IdiomasComponent } from './components/idiomas/idiomas.component';
+import { EditProyectComponent } from './components/Proyects/edit-proyect/edit-proyect.component';
+import { EditHardSkillComponent } from './components/skills/edit-hard-skill/edit-hard-skill.component';
+import { EditEduComponent } from './components/education/edit-edu/edit-edu.component';
+import { EditExpComponent } from './components/experience/edit-exp/edit-exp.component';
 
 
 const appRoutes: Routes = [
@@ -82,6 +86,10 @@ const appRoutes: Routes = [
     HardComponent,
     SoftSkillsComponent,
     IdiomasComponent,
+    EditProyectComponent,
+    EditHardSkillComponent,
+    EditEduComponent,
+    EditExpComponent,
 ],
   imports: [
     BrowserModule,

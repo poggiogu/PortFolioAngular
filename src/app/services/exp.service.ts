@@ -32,4 +32,11 @@ export class ExpService {
   addExp(exp:Exp): Observable<Exp> {
     return this.http.post<Exp>(this.apiUrl, exp, httpOptions)
   }
+
+  updateExp(exp : Exp): Observable<Exp> {
+    const url = `${this.apiUrl}/${exp.id}`
+    return this.http.put<Exp>(url, exp, httpOptions)
+  }
+
 }
+
