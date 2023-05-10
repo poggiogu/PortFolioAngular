@@ -1,6 +1,6 @@
 <form 
     (ngSubmit)="onSubmit()"
-    class="mb-3" Style="margin:20px; min-width: 300px;">
+    class="mb-3" Style="margin:20px; min-width: 400px;">
     <h3>
         Editar Curso
     </h3>
@@ -16,13 +16,13 @@
         />
     </div>
     <div class="mb-3">
-        <label for="course">Courso / Grado</label>
+        <label for="course">Curso</label>
         <input 
             class="form-control"
             type="text" 
             name="course" 
             id="course" 
-            placeholder="'Course/Degree'" 
+            placeholder="'curso'" 
             [(ngModel)]="edu.course"
         />
     </div>
@@ -70,7 +70,7 @@
             [(ngModel)]="edu.instLogoUrl"
         />
     </div>
-    <div class="d-flex  mb-12 lg-12 sm-12">
-        <button type="submit" class="btn btn-primary">Enviar</button>
+    <div class="d-flex mb-3">
+        <button type="submit" class="btn btn-secondary">Enviar</button>
     </div>
 </form>
