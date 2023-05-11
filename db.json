@@ -14,10 +14,10 @@
       "id": 3,
       "title": "Argentina Progragma",
       "course": "se_programar",
-      "descripcion": "Full Stack Developer Jr.",
-      "year": "2021",
+      "descripcion": "introducción a la programación",
+      "year": "Junio 2022",
       "instLogoUrl": "https://i.ibb.co/Ssp4pd3/logo-argentina-programa.png",
-      "certificadoUrl": "urlcertificado"
+      "certificadoUrl": "https://www.google.com"
     }
   ],
   "proyectos": [
@@ -45,7 +45,7 @@
       "id": 1,
       "titulo": "Bootstrap",
       "color": "rgb(132, 31, 169)",
-      "porcentaje": "80",
+      "porcentaje": "75",
       "imagen": "https://i.ibb.co/gFhs2r5/Bootstrap-logo-svg.png"
     },
     {
@@ -59,7 +59,7 @@
       "id": 3,
       "titulo": "HTML5",
       "color": "orange",
-      "porcentaje": "90",
+      "porcentaje": "75",
       "imagen": "https://i.ibb.co/SVRvNsM/5352-html5-102567.png"
     },
     {
@@ -80,14 +80,14 @@
       "id": 6,
       "titulo": "MySQL",
       "color": "blue",
-      "porcentaje": "80",
+      "porcentaje": "75",
       "imagen": "https://i.ibb.co/rZJ1vM9/logo-mysql-26353.png"
     },
     {
       "id": 7,
       "titulo": "Java",
       "color": "red",
-      "porcentaje": "60",
+      "porcentaje": "75",
       "imagen": "https://i.ibb.co/jbqwpHy/pngwing-com.png"
     }
   ]
