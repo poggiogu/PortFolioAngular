@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, importProvidersFrom } from '@angular/core';
+import { CircleProgressComponent } from 'ng-circle-progress';
 
 @Component({
   selector: 'app-soft-skills',

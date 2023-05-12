@@ -9,22 +9,22 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { Error404Component } from './components/error404/error404.component';
+import { Error404Component } from './components/Messages/error404/error404.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { IntroComponent } from './components/intro/intro.component';
+import { IntroComponent } from './components/Inicio/intro/intro.component';
 import { ExpComponent } from './components/experience/exp/exp.component';
 import { AddExpComponent } from './components/experience/add-exp/add-exp.component';
 import { ExpItemComponent } from './components/experience/exp-item/exp-item.component';
-import { AboutComponent } from './components/about/about.component';
+import { AboutComponent } from './components/Messages/about/about.component';
 import { ExperiencesHeaderButtonComponent } from './components/experience/experiences-header-button/experiences-header-button.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { EduComponent } from './components/education/edu/edu.component';
 import { EduItemComponent } from './components/education/edu-item/edu-item.component';
 import { AddEduComponent } from './components/education/add-edu/add-edu.component';
 import { EducationHeaderButtonComponent } from './components/education/education-header-button/education-header-button.component';
-import { SorryComponent } from './components/sorry/sorry.component';
-import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
-import { LoginButtonComponent } from './components/login-button/login-button.component';
+import { SorryComponent } from './components/Messages/sorry/sorry.component';
+import { IniciarSesionComponent } from './components/Inicio/iniciar-sesion/iniciar-sesion.component';
+import { LoginButtonComponent } from './components/Inicio/login-button/login-button.component';
 import { ProyectosComponent } from './components/Proyects/proyectos/proyectos.component';
 import { ProyectoComponent } from './components/Proyects/proyecto-item/proyecto.component';
 import { AddProyectoBtnComponent } from './components/Proyects/add-proyecto-btn/add-proyecto-btn.component';
@@ -43,8 +43,8 @@ import { EditProyectComponent } from './components/Proyects/edit-proyect/edit-pr
 import { EditHardSkillComponent } from './components/skills/edit-hard-skill/edit-hard-skill.component';
 import { EditEduComponent } from './components/education/edit-edu/edit-edu.component';
 import { EditExpComponent } from './components/experience/edit-exp/edit-exp.component';
-import { EditarPerfilComponent } from './components/editar-perfil/editar-perfil.component';
-import { PerfilComponent } from './components/perfil/perfil.component';
+import { EditarPerfilComponent } from './components/Inicio/editar-perfil/editar-perfil.component';
+import { PerfilComponent } from './components/Inicio/perfil/perfil.component';
 
 
 const appRoutes: Routes = [

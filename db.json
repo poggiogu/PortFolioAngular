@@ -56,13 +56,6 @@
       "imagen": "https://i.ibb.co/V3nL68h/angular-icon-logo-1.png"
     },
     {
-      "id": 3,
-      "titulo": "HTML5",
-      "color": "orange",
-      "porcentaje": "75",
-      "imagen": "https://i.ibb.co/SVRvNsM/5352-html5-102567.png"
-    },
-    {
       "id": 4,
       "titulo": "Spring Boot",
       "color": "green",
@@ -73,14 +66,14 @@
       "id": 5,
       "titulo": "Javascript",
       "color": "yellow",
-      "porcentaje": "75",
+      "porcentaje": "65",
       "imagen": "https://i.ibb.co/c3zxzZJ/javascript-39397.png"
     },
     {
       "id": 6,
       "titulo": "MySQL",
       "color": "blue",
-      "porcentaje": "75",
+      "porcentaje": "65",
       "imagen": "https://i.ibb.co/rZJ1vM9/logo-mysql-26353.png"
     },
     {
@@ -96,6 +89,13 @@
       "color": "blue",
       "porcentaje": "75",
       "imagen": "https://i.ibb.co/LtddjBH/Png-Item-1985012.png"
+    },
+    {
+      "id": 9,
+      "titulo": "HTML5",
+      "color": "orange",
+      "porcentaje": "75",
+      "imagen": "https://i.ibb.co/KwmHqP1/file-type-html-icon-130541.png"
     }
   ]
 }
