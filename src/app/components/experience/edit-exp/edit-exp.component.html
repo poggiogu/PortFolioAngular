@@ -1,7 +1,7 @@
 <form 
     (ngSubmit)="onSubmit()"
     class="mb-3" 
-    Style="margin:20px; min-width:400px;">
+    Style="margin:20px; max-width: 400px; min-width: 320px;">
     <h3>
         Editar Experiencia Laboral
     </h3>
@@ -24,7 +24,7 @@
             name="cargo" 
             id="text" 
             placeholder="'Cargo'" 
-            [(ngModel)]="exp.text"
+            [(ngModel)]="exp.cargo"
         />
     </div>
     <div class="mb-3">
@@ -35,7 +35,7 @@
             name="descripcion" 
             id="descripcion" 
             placeholder="'descripcion de actividades'" 
-            [(ngModel)]="exp.text"
+            [(ngModel)]="exp.descripcion"
         />
     </div>
     <div class="mb-3">

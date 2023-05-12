@@ -87,8 +87,15 @@
       "id": 7,
       "titulo": "Java",
       "color": "red",
-      "porcentaje": "75",
+      "porcentaje": "65",
       "imagen": "https://i.ibb.co/jbqwpHy/pngwing-com.png"
+    },
+    {
+      "id": 8,
+      "titulo": "CSS",
+      "color": "blue",
+      "porcentaje": "75",
+      "imagen": "https://i.ibb.co/LtddjBH/Png-Item-1985012.png"
     }
   ]
 }

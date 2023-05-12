@@ -6,6 +6,7 @@
     background-size: cover; 
     margin-bottom: auto;
     padding-top:100px;
+    margin-top: -20vh;
 }
 .flex-fill{
     width:50%;

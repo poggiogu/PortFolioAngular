@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <app-proyecto 
-                class="col-md-3 my-2"
+                class="col my-2"
                 *ngFor="let proyecto of proyectos"
                 [proyecto] = "proyecto"
                 (onDeleteProyect)="deleteProyect(proyecto)"
