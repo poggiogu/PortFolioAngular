@@ -8,17 +8,18 @@ import { Iproyecto } from 'src/app/iproyecto';
   styleUrls: ['./add-proyect.component.css']
 })
 export class AddProyectComponent {
+
   [x: string]: any;
+
   @Output() onAddProyect : EventEmitter<Iproyecto> = new EventEmitter();
   //inicializacion de las variables
   id:number = 0;
   nombre:string = "";
   descripcion:string = "";
   fecha:string = "";
-  urlimagen:string = "";
-  urlrepositorio:string = "";
-  
-    
+  urlImagen:string = "";
+  urlRepositorio:string = "";
+      
   constructor( 
     private proyectService : ProyectService, 
   ) {}
@@ -30,10 +31,10 @@ export class AddProyectComponent {
       alert("debes agregar un nombre de proyecto!")
       return
     }
-    const { id, nombre, descripcion, fecha, urlimagen, urlrepositorio } = this 
-    const newProy = { id, nombre, descripcion, fecha, urlimagen, urlrepositorio };
+    const {  id, nombre, descripcion, fecha, urlImagen, urlRepositorio } = this 
+    const newProyect = {  id, nombre, descripcion, fecha, urlImagen, urlRepositorio };
 
-    this.onAddProyect.emit(newProy)
+    this.onAddProyect.emit(newProyect)
 
   }
 

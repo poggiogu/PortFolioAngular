@@ -3,6 +3,6 @@ export interface Iproyecto {
     nombre:string,
     descripcion:string,
     fecha:string,
-    urlimagen:string,
-    urlrepositorio:string
+    urlImagen:string,
+    urlRepositorio:string
 }

@@ -13,7 +13,7 @@ export class ProyectoComponent implements OnInit{
   
   proyectos:Iproyecto[] = [];
 
-  @Input() proyecto:Iproyecto = {id:0, nombre:"", descripcion:"", fecha:"", urlimagen:"", urlrepositorio:""};
+  @Input() proyecto:Iproyecto = {id:0, nombre:"", descripcion:"", fecha:"", urlImagen:"", urlRepositorio:""};
 
   @Output() onDeleteProyect : EventEmitter<Iproyecto> = new EventEmitter()
 
@@ -29,9 +29,9 @@ export class ProyectoComponent implements OnInit{
     (this.proyectos = proyectos)); //método subscribe de los observables
   };
 
-  onDelete(proyecto: Iproyecto){
+  onDelete(proyect: Iproyecto){
     console.log("onDelete de proyecto-item se ha llamado!")
-    this.onDeleteProyect.emit(proyecto)
+    this.onDeleteProyect.emit(proyect)
   }; 
 
 }

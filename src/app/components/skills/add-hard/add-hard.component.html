@@ -1,7 +1,7 @@
 <form 
     class="add-form"   
     (ngSubmit)="onSubmit()"
-    class="mb-3" Style="margin:20px; min-width: 400px;">
+    class="mb-3" Style="margin:20px; min-width: 330px;">
     <h3>
         Nuevo Skill
     </h3>
@@ -13,7 +13,7 @@
             name="titulo" 
             id="titulo" 
             placeholder="'HTML5'" 
-            [(ngModel)] = "titulo"
+            [(ngModel)]="titulo"
         />
     </div>
     <div class="mb-3">
@@ -24,7 +24,7 @@
             name="descripcion" 
             id="text" 
             placeholder="'verde'" 
-            [(ngModel)] = "color"
+            [(ngModel)]="color"
         />
     </div>
     <div class="mb-3">
@@ -35,7 +35,7 @@
             name="porcentaje" 
             id="porcentaje" 
             placeholder="'80'" 
-            [(ngModel)] = "porcentaje"
+            [(ngModel)]="porcentaje"
         />
     </div>
     <div class="mb-3">
@@ -46,7 +46,7 @@
             name="imagen" 
             id="imagen" 
             placeholder="'https://...'"
-            [(ngModel)] = "imagen"
+            [(ngModel)]="imagen"
         />
     </div>
     <div class="d-flex  mb-12 lg-12 sm-12">

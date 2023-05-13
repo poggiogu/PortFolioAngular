@@ -43,24 +43,9 @@
             <fa-icon 
                 [icon]= "faTrash"
                 [ngStyle] = "{'color':'black'}"
-                (click) = "onDelete(hardSkill)"
+                (click)="onDelete(hardSkill)"
                >
             </fa-icon>
         </button>
     </div> 
 </div>
-
-<!-- 
-                <button type="button" 
-                        class="btn dropdown-toggle btn-transparent"
-                        data-bs-toggle="dropdown">
-                    <fa-icon [icon]= "faPencil"
-                             style="color:black"
-                    ></fa-icon>
-                </button>
-                <div class="dropdown-menu" >
-                    <app-edit-proyect 
-                    [proyecto]="proyecto"
-                    ></app-edit-proyect>
-                  </div>
--->

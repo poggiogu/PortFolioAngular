@@ -1,6 +1,6 @@
-<div class="card" style="max-width: 18rem;">
+<div class="card" style="width: 18rem; margin-top: 20px;">
     <img class="card-img-top"
-         [src]="proyecto.urlimagen"
+         [src]="proyecto.urlImagen"
          alt="proyecto" 
          >
     <div class="card-body">
@@ -10,7 +10,7 @@
     <ul class="list-group list-group-flush">
         <li class="list-group-item bg-transparent">{{proyecto.fecha}}</li>
         <li class="list-group-item bg-transparent">
-            <a style="color:black" href={{proyecto.urlrepositorio}}>
+            <a style="color:black" href={{proyecto.urlRepositorio}}>
                 <b>
                   ir al repositorio
                 </b>
@@ -37,7 +37,7 @@
                 <button type="button" class="btn btn-transparent">
                     <fa-icon [icon]= "faTrash"
                              style="color:black"
-                             (click) = "onDelete(proyecto)">
+                             (click)="onDelete(proyecto)">
                     </fa-icon>
                 </button>
             </div> 

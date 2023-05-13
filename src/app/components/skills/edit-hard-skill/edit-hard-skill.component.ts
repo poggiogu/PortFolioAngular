@@ -3,6 +3,7 @@ import { HardSkillServiceService } from 'src/app/services/hard-skill-service.ser
 import { iHardSkill } from 'src/app/iHardSkill';
 
 
+
 @Component({
   selector: 'app-edit-hard-skill',
   templateUrl: './edit-hard-skill.component.html',
@@ -13,12 +14,14 @@ export class EditHardSkillComponent {
   @Input() hardSkill : iHardSkill = {id:0, titulo:"", color:"", porcentaje:"", imagen:""};
 
   constructor( 
-    private hardService : HardSkillServiceService 
+    private hardService : HardSkillServiceService
+ 
   ) {}
   
   ngOnInit (): void { }
 
-  onSubmit() {
+  
+  onSubmit(): void {
     const updatedSkill: iHardSkill = {
       id: this.hardSkill.id,
       titulo: this.hardSkill.titulo,

@@ -4,7 +4,7 @@
                 class="col my-2"
                 *ngFor="let proyecto of proyectos"
                 [proyecto] = "proyecto"
-                (onDeleteProyect)="deleteProyect(proyecto)"
+                (onDeleteProyect)="deleteProyect($event)"
         ></app-proyecto>
     </div>    
 </div>

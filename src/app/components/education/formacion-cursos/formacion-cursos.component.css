@@ -5,6 +5,8 @@
     -o-background-size: cover;
     background-size: cover; 
     margin-bottom: auto;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
 
    
 }

@@ -4,7 +4,7 @@
                 class="col my-4"
                 *ngFor="let hardSkill of hardSkills"
                 [hardSkill] = "hardSkill"
-                (onDeleteSkill)="deleteSkill(hardSkill)"
+                (onDeleteSkill)="deleteSkill($event)"
         ></app-hard-skill-item>
     </div>    
 </div>

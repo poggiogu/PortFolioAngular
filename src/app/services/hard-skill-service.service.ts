@@ -14,24 +14,23 @@ const httpOptions = {
 })
 export class HardSkillServiceService {
 
-  private apiUrl = 'http://localhost:5000/hardSkills';
+  private apiUrl = 'http://localhost:8080/portfolio/skill';
 
   constructor(
     private http:HttpClient
-  ) { };
+  ) { }
 
   getHardSkills(): Observable<iHardSkill[]> {
-    return this.http.get<iHardSkill[]>(this.apiUrl);
-  };
+    return this.http.get<iHardSkill[]>(`${this.apiUrl}/traertodos`);
+  }
 
   deletehardSkill(hardSkill:iHardSkill): Observable<iHardSkill>{
     const url = `${this.apiUrl}/${hardSkill.id}`
     return this.http.delete<iHardSkill>(url)
-
   }
 
   addHardSkill(hardSkill:iHardSkill): Observable<iHardSkill> {
-    return this.http.post<iHardSkill>(this.apiUrl, hardSkill, httpOptions)
+    return this.http.post<iHardSkill>(`${this.apiUrl}/crear`, hardSkill, httpOptions)
   }
   
   updateHardSkill(hardSkill : iHardSkill): Observable<iHardSkill> {

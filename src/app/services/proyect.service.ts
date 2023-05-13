@@ -14,28 +14,28 @@ const httpOptions = {
 })
 export class ProyectService {
 
-  private apiUrl = 'http://localhost:5000/proyectos';
+  private apiUrl = 'http://localhost:8080/portfolio/proyectos';
 
   constructor(
     private http:HttpClient
-  ) { };
+  ) { }
 
   getProyectos(): Observable<Iproyecto[]> {
-    return this.http.get<Iproyecto[]>(this.apiUrl);
+    return this.http.get<Iproyecto[]>(`${this.apiUrl}/traertodos`);
   }
 
   getProyect(proyect:Iproyecto):Observable<Iproyecto> {
     const url = `${this.apiUrl}/${proyect.id}`
-    return this.http.get<Iproyecto>(url);
+    return this.http.get<Iproyecto>(url)
   }
 
   deleteProyect(proyect:Iproyecto): Observable<Iproyecto>{
-    const url = `${this.apiUrl}/${proyect.id}`;
-    return this.http.delete<Iproyecto>(url);
+    const url = `${this.apiUrl}/${proyect.id}`
+    return this.http.delete<Iproyecto>(url)
   }
 
   addProyect(proyect:Iproyecto): Observable<Iproyecto> {
-    return this.http.post<Iproyecto>(this.apiUrl, proyect, httpOptions);
+    return this.http.post<Iproyecto>(`${this.apiUrl}/crear`, proyect, httpOptions);
   }
 
   updateProyect(proyect : Iproyecto): Observable<Iproyecto> {

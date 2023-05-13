@@ -13,14 +13,14 @@ const httpOptions = {
 })
 export class PerfilService {
 
-  private apiUrl = 'http://localhost:5000/perfil';
+  private apiUrl = 'http://localhost:8080/portfolio/perfil';
 
   constructor(
     private http:HttpClient
   ) { }
   
   getPerfil(): Observable<iPerfil[]> {
-    return this.http.get<iPerfil[]>(this.apiUrl);
+    return this.http.get<iPerfil[]>(`${this.apiUrl}/traertodos`);
   };
 
   deletePerfil(perfil:iPerfil): Observable<iPerfil>{
@@ -29,7 +29,7 @@ export class PerfilService {
   }
 
   addPerfill(perfil:iPerfil): Observable<iPerfil> {
-    return this.http.post<iPerfil>(this.apiUrl, perfil, httpOptions);
+    return this.http.post<iPerfil>(`${this.apiUrl}/crear`, perfil, httpOptions);
   }
 
   updatePerfil(perfil : iPerfil): Observable<iPerfil> {

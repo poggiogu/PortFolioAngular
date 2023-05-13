@@ -14,14 +14,14 @@ const httpOptions = {
 })
 export class EduService {
 
-  private apiUrl = 'http://localhost:5000/edus';
+  private apiUrl = 'http://localhost:8080/portfolio/educacion';
 
   constructor(
     private http:HttpClient
   ) { };
 
   getEdus(): Observable<Edu[]> {
-    return this.http.get<Edu[]>(this.apiUrl);
+    return this.http.get<Edu[]>(`${this.apiUrl}/traertodos`);
   };
 
   deleteEdu(edu:Edu): Observable<Edu>{
@@ -30,7 +30,7 @@ export class EduService {
   }
 
   addEdu(edu:Edu): Observable<Edu> {
-    return this.http.post<Edu>(this.apiUrl, edu, httpOptions)
+    return this.http.post<Edu>(`${this.apiUrl}/crear`, edu, httpOptions)
   }
 
   updateEdu(edu : Edu): Observable<Edu> {

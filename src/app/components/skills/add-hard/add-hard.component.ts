@@ -29,9 +29,9 @@ export class AddHardComponent {
       return
     }
     const { id, titulo, color, porcentaje, imagen } = this 
-    const newProy = { id, titulo, color, porcentaje, imagen };
+    const newSkill = { id, titulo, color, porcentaje, imagen };
 
-    this.onAddSkill.emit(newProy)
+    this.onAddSkill.emit(newSkill)
 
   }
 

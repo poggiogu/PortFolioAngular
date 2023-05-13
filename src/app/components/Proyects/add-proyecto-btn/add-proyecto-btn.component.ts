@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Iproyecto } from 'src/app/iproyecto';
 import { ProyectService } from 'src/app/services/proyect.service';
 
@@ -7,8 +7,9 @@ import { ProyectService } from 'src/app/services/proyect.service';
   templateUrl: './add-proyecto-btn.component.html',
   styleUrls: ['./add-proyecto-btn.component.css']
 })
-export class AddProyectoBtnComponent implements OnInit {
-  
+export class AddProyectoBtnComponent{
+  [x: string]: any;
+
   proyectos : Iproyecto[] = [];
   
   constructor (
@@ -16,9 +17,7 @@ export class AddProyectoBtnComponent implements OnInit {
   ) {}
 
   ngOnInit(): void { 
-    //como una promesa
-    this.proyectoService.getProyectos().subscribe((proyectos) => 
-    (this.proyectos = proyectos)); //método subscribe de los observables
+   
   }
   
   addProyecto(proyecto:Iproyecto){

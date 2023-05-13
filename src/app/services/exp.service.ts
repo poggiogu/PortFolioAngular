@@ -13,14 +13,14 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class ExpService {
-  private apiUrl = 'http://localhost:5000/exps';
+  private apiUrl = 'http://localhost:8080/portfolio/experiencia';
 
   constructor(
     private http:HttpClient
   ) { };
 
   getExps(): Observable<Exp[]> {
-    return this.http.get<Exp[]>(this.apiUrl);
+    return this.http.get<Exp[]>(`${this.apiUrl}/traertodos`);
   };
 
   deleteExp(exp:Exp): Observable<Exp>{
@@ -30,7 +30,7 @@ export class ExpService {
   }
 
   addExp(exp:Exp): Observable<Exp> {
-    return this.http.post<Exp>(this.apiUrl, exp, httpOptions)
+    return this.http.post<Exp>(`${this.apiUrl}/crear`, exp, httpOptions)
   }
 
   updateExp(exp : Exp): Observable<Exp> {

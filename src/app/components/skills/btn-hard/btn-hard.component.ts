@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { iHardSkill } from 'src/app/iHardSkill';
 import { HardSkillServiceService } from 'src/app/services/hard-skill-service.service';
 
@@ -16,9 +16,7 @@ export class BtnHardComponent {
   ) {}
 
   ngOnInit(): void { 
-    //como una promesa
-    this.hardService.getHardSkills().subscribe((hardSkills) => 
-    (this.hardSkills = hardSkills)); //método subscribe de los observables
+   
   }
   
   addHardSkill(hardSkill : iHardSkill){

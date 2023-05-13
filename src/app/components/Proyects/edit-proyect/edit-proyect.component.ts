@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ProyectService } from 'src/app/services/proyect.service';
 import { Iproyecto } from 'src/app/iproyecto';
 
@@ -8,9 +8,9 @@ import { Iproyecto } from 'src/app/iproyecto';
   styleUrls: ['./edit-proyect.component.css']
 })
 export class EditProyectComponent {
- // [x: string]: any;
+  [x: string]: any;
 
-  @Input() proyecto:Iproyecto = {id:0, nombre:"", descripcion:"", fecha:"", urlimagen:"", urlrepositorio:""};
+  @Input() proyecto:Iproyecto = {id:0, nombre:"", descripcion:"", fecha:"", urlImagen:"", urlRepositorio:""};
 
   constructor( 
     private proyectoService : ProyectService, 
@@ -26,8 +26,8 @@ export class EditProyectComponent {
       nombre: this.proyecto.nombre,
       descripcion: this.proyecto.descripcion,
       fecha: this.proyecto.fecha,
-      urlimagen: this.proyecto.urlimagen,
-      urlrepositorio: this.proyecto.urlrepositorio
+      urlImagen: this.proyecto.urlImagen,
+      urlRepositorio: this.proyecto.urlRepositorio
     };
   
     this.proyectoService.updateProyect(updatedProyect).subscribe(
