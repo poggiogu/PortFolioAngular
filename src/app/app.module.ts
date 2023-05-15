@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { RouterModule, Routes } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 
@@ -45,15 +44,27 @@ import { EditEduComponent } from './components/education/edit-edu/edit-edu.compo
 import { EditExpComponent } from './components/experience/edit-exp/edit-exp.component';
 import { EditarPerfilComponent } from './components/Inicio/editar-perfil/editar-perfil.component';
 import { PerfilComponent } from './components/Inicio/perfil/perfil.component';
+import { LogoutButtonComponent } from './components/Inicio/logout-button/logout-button.component';
+import { AppRoutingModule } from './app-routing.module';
+import { PortfolioSEComponent } from './components/sinEdicion/portfolio-se/portfolio-se.component';
+import { PerfilSeComponent } from './components/sinEdicion/perfil/perfil-se/perfil-se.component';
+import { IntroSeComponent } from './components/sinEdicion/perfil/intro-se/intro-se.component';
+import { ExperienciasSeComponent } from './components/sinEdicion/Exp/experiencias-se/experiencias-se.component';
+import { ExpSeComponent } from './components/sinEdicion/Exp/exp-se/exp-se.component';
+import { ExpItemSeComponent } from './components/sinEdicion/Exp/exp-item-se/exp-item-se.component';
+import { FormacionCursosSeComponent } from './components/sinEdicion/Edu/formacion-cursos-se/formacion-cursos-se.component';
+import { EduSeComponent } from './components/sinEdicion/Edu/edu-se/edu-se.component';
+import { EduItemSeComponent } from './components/sinEdicion/Edu/edu-item-se/edu-item-se.component';
+import { ProyectosSeComponent } from './components/sinEdicion/Proyectos/proyectos-se/proyectos-se.component';
+import { ProyectoElementSeComponent } from './components/sinEdicion/Proyectos/proyecto-element-se/proyecto-element-se.component';
+import { ProyectoSeComponent } from './components/sinEdicion/Proyectos/proyecto-se/proyecto-se.component';
+import { HardskillsSeComponent } from './components/sinEdicion/Tech-skills/hardskills-se/hardskills-se.component';
+import { HardSkillItemSeComponent } from './components/sinEdicion/Tech-skills/hard-skill-item-se/hard-skill-item-se.component';
+import { HardSkillSeComponent } from './components/sinEdicion/Tech-skills/hard-skill-se/hard-skill-se.component';
 
 
-const appRoutes: Routes = [
-  {path: 'portfolio', component : PortfolioComponent},
-  {path: 'sorry', component: SorryComponent},
-  {path: '**', component: Error404Component},
-  {path: 'iniciar-sesion', component: IniciarSesionComponent},
-  {path: '', redirectTo:'portfolio', pathMatch:'full'}
-]
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -94,13 +105,28 @@ const appRoutes: Routes = [
     EditExpComponent,
     EditarPerfilComponent,
     PerfilComponent,
+    LogoutButtonComponent,
+    PortfolioSEComponent,
+    PerfilSeComponent,
+    IntroSeComponent,
+    ExperienciasSeComponent,
+    ExpSeComponent,
+    ExpItemSeComponent,
+    FormacionCursosSeComponent,
+    EduSeComponent,
+    EduItemSeComponent,
+    ProyectosSeComponent,
+    ProyectoElementSeComponent,
+    ProyectoSeComponent,
+    HardskillsSeComponent,
+    HardSkillItemSeComponent,
+    HardSkillSeComponent
 ],
   imports: [
     BrowserModule,
     FontAwesomeModule,
     HttpClientModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes, {enableTracing:true}),
     ReactiveFormsModule,
     // Specify ng-circle-progress as an import
     NgCircleProgressModule.forRoot({
@@ -113,7 +139,8 @@ const appRoutes: Routes = [
       animationDuration: 300,
       
       
-    })
+    }),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent],

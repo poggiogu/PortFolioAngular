@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { iHardSkill } from 'src/app/iHardSkill';
 import { HardSkillServiceService } from 'src/app/services/hard-skill-service.service';
 
+
 @Component({
   selector: 'app-btn-hard',
   templateUrl: './btn-hard.component.html',
@@ -12,7 +13,9 @@ export class BtnHardComponent {
   hardSkills : iHardSkill[] = [];
   
   constructor (
-    private hardService : HardSkillServiceService
+    private hardService : HardSkillServiceService,
+   
+
   ) {}
 
   ngOnInit(): void { 
@@ -23,6 +26,8 @@ export class BtnHardComponent {
     this.hardService.addHardSkill(hardSkill).subscribe((hardSkill)=>(
       this.hardSkills.push(hardSkill)
     ))
+    console.log("skill creada correctamente!");
+    
   }      
 
 }

@@ -14,7 +14,7 @@ const httpOptions = {
 })
 export class HardSkillServiceService {
 
-  private apiUrl = 'http://localhost:8080/portfolio/skill';
+  private apiUrl = 'https://portfoliobackend-ntdy.onrender.com/portfolio/skill';
 
   constructor(
     private http:HttpClient

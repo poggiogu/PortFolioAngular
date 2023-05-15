@@ -14,7 +14,7 @@ const httpOptions = {
 })
 export class EduService {
 
-  private apiUrl = 'http://localhost:8080/portfolio/educacion';
+  private apiUrl = 'https://portfoliobackend-ntdy.onrender.com/portfolio/educacion';
 
   constructor(
     private http:HttpClient

@@ -3,6 +3,7 @@
       <ul class="navbar-nav">
         <li class="nav-item1">
           <a 
+            title="home page argentina_programa"
             href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa">
           <img src="./assets/images/download.png" 
                alt="#ArP4.0 logo" 
@@ -50,10 +51,13 @@
                 ><fa-icon class="bottom-icon" [icon]= "faInstagram"></fa-icon
             ></a>
         </li>
-        <li class="nav-item">
-          <app-login-button></app-login-button>
+        <li class="nav-item" title="login" *ngIf="!this.authService.isLoggedInFn()">
+          <app-login-button ></app-login-button>
         </li>
-
+        <li class="nav-item">
+          <app-logout-button title="logout" *ngIf="this.authService.isLoggedInFn()"></app-logout-button>
+        </li>
       </ul>
     </div>
 </nav>
+

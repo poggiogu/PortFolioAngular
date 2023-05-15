@@ -1,0 +1,34 @@
+<div class="container-fluid" id="back">
+    <div
+        class="d-flex" 
+        id="banner" 
+        [ngStyle]="{
+                    'background':'url('+ perfil.urlImagenBanner +')repeat-y center center fixed',
+                    '-webkit-background-size':'cover',
+                    '-moz-background-size':'cover',
+                    '-o-background-size':'cover',
+                    'background-size':'cover'}">
+    </div>
+        <div class="d-flex justify-content-arround" id="card" >
+            <div class="flex" id="image">
+                <img class="rounded-pill" [src]="perfil.urlImagenPerfil" alt="foto perfil">
+                <h5>
+                    <b>
+                    {{perfil.nombre}}
+                    </b>
+                </h5>
+                <p>
+                    {{perfil.titulo}}
+                </p>
+            </div>
+                <div class="flex-grow p-2 m-1" id="fondo_caja">
+                    <div class="flex-grow p-2" id="caja_descripcion">
+                        <h6 id="texto_desc">  
+                            {{perfil.acercaDeMi}}
+                        </h6>
+                    
+                   </div>
+            </div>   
+        </div>
+    </div>
+

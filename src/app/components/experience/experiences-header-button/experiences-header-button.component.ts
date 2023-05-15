@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Exp } from 'src/app/iExp';
-import { Observable, of } from 'rxjs';
-import { HttpClient, HttpHandler } from '@angular/common/http';
 import { ExpService } from 'src/app/services/exp.service';
 
 @Component({
@@ -14,7 +12,11 @@ export class ExperiencesHeaderButtonComponent implements OnInit{
 
   exps : Exp[] = [];
   
-  constructor (private expService: ExpService) {}
+  constructor (
+    private expService: ExpService,
+   
+    
+  ) {}
 
   ngOnInit(): void { 
     //como una promesa
@@ -26,5 +28,7 @@ export class ExperiencesHeaderButtonComponent implements OnInit{
     this.expService.addExp(exp).subscribe((exp)=>(
       this.exps.push(exp)
     ))
+    console.log("experiencia creada correctamente!");
+    
   }  
 }

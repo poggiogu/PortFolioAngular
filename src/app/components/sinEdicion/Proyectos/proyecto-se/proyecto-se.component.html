@@ -1,0 +1,24 @@
+<div class="card" style="width: 18rem; margin-top: 20px;">
+    <img class="card-img-top"
+         [src]="proyecto.urlImagen"
+         alt="proyecto" 
+         >
+    <div class="card-body">
+        <h5 class="card-title"><strong>{{proyecto.nombre}}</strong></h5>
+        <p class="card-text">{{proyecto.descripcion}}</p>
+        <p>
+            {{proyecto.fecha}}
+        </p>       
+        <a style="color:black" href={{proyecto.urlRepositorio}}>
+            <b>
+                ir al repositorio
+            </b>
+        </a>
+    </div>
+       
+    <div class="card-body"> 
+        <div class="d-flex  mb-12 lg-12 sm-12">
+        </div>
+    </div>
+</div>
+

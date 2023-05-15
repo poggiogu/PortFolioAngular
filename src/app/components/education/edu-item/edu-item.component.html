@@ -8,7 +8,8 @@
                 </h4>
             </div>
             <div class="flex">                
-                    <button type="button" 
+                    <button type="button"
+                        title="editar"
                         class="btn dropdown-toggle btn-transparent"
                         data-bs-toggle="dropdown">
                     <fa-icon [icon]= "faPencil"
@@ -20,7 +21,7 @@
                     [edu]="edu"
                     ></app-edit-edu>
                   </div>
-                    <button type="button" class="btn btn-transparent">
+                    <button type="button" title="eliminar item" class="btn btn-transparent">
                         <fa-icon 
                             [icon]= "faTrash"
                             [ngStyle] = "{'color':'black'}"
@@ -40,4 +41,5 @@
         </p>
         <a title="link al certificado Obtenido" [href]="edu.certificadoUrl" class="text-dark"><b> Certificado </b></a>
     </div>
-</div>    
+</div>  
+  

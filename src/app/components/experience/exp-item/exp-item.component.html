@@ -9,6 +9,7 @@
             </div>
             <div class="flex">                
                     <button 
+                        title="editar"
                         type="button" 
                         class="btn dropdown-toggle btn-transparent"
                         data-bs-toggle="dropdown">
@@ -21,7 +22,9 @@
                             [exp]="exp"
                         ></app-edit-exp>
                     </div>
-                    <button type="button" class="btn btn-transparent">
+                    <button title="eliminar"
+                            type="button" 
+                            class="btn btn-transparent">
                         <fa-icon 
                             [icon]= "faTrash"
                             [ngStyle] = "{'color':'black'}"

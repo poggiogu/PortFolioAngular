@@ -13,7 +13,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class ExpService {
-  private apiUrl = 'http://localhost:8080/portfolio/experiencia';
+  private apiUrl = 'https://portfoliobackend-ntdy.onrender.com/portfolio/experiencia';
 
   constructor(
     private http:HttpClient

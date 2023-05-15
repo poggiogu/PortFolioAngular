@@ -13,7 +13,7 @@ const httpOptions = {
 })
 export class PerfilService {
 
-  private apiUrl = 'http://localhost:8080/portfolio/perfil';
+  private apiUrl = 'https://portfoliobackend-ntdy.onrender.com/portfolio/perfil';
 
   constructor(
     private http:HttpClient

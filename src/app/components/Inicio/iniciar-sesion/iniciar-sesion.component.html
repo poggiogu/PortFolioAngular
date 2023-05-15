@@ -5,26 +5,16 @@
     <h3>Iniciar Sesión</h3>
     <p>para acceder a las herramientas de edición</p>
     <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Email</label>
-      <input type="email" formControlName="email" 
-      [ngClass]= "{'is-invalid':Email?.errors && Email?.touched, 
-      'is-valid': !Email?.errors && Email?.touched}" 
-      class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
-    <div *ngIf= "Email?.errors && Email?.touched">
-      <p *ngIf= "Email?.hasError('required')" class="text-danger">
-        El email es requerido.
-      </p>
-      <p *ngIf= "Email?.hasError('email')" class="text-danger">
-        El formato del email debe ser válido.
-      </p>
+      <label for="userName" class="form-label">Nombre de Usuario</label>
+      <input type="text" class="form-control" id="userName" formControlName="userName" aria-describedby="userName" >
     </div>
-    </div>
+    
     <div class="mb-3">
       <label for="exampleInputPassword1" class="form-label">Contraseña</label>
       <input type="password" formControlName="password" 
       [ngClass]= "{'is-invalid':Password?.errors && Password?.touched, 
       'is-valid': !Password?.errors && Password?.touched}" 
-      class="form-control" id="exampleInputPassword1">
+      class="form-control" id="Password">
       <div *ngIf= "Password?.errors && Password?.touched">
         <p *ngIf= "Password?.hasError('required')" class="text-danger">
           El Password es requerido.
@@ -34,7 +24,9 @@
         </p>
       </div>
     </div>
+    
     <div class="d-flex">
       <button type="submit" class="btn btn-secondary">Iniciar Sesion</button>
     </div>
+    
 </form>

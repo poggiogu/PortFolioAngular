@@ -14,7 +14,7 @@ const httpOptions = {
 })
 export class ProyectService {
 
-  private apiUrl = 'http://localhost:8080/portfolio/proyectos';
+  private apiUrl = 'https://portfoliobackend-ntdy.onrender.com/portfolio/proyectos';
 
   constructor(
     private http:HttpClient

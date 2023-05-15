@@ -1,8 +1,6 @@
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { Edu } from 'src/app/iEdu';
 import { EduService } from 'src/app/services/edu.service';
-import { Observable, of } from 'rxjs';
-import { HttpClient, HttpHandler } from '@angular/common/http';
 
 @Component({
   selector: 'app-education-header-button',
@@ -13,7 +11,10 @@ export class EducationHeaderButtonComponent implements OnInit{
 
   edus : Edu[] = [];
   
-  constructor (private eduService: EduService) {}
+  constructor (
+    private eduService: EduService,
+    
+  ) {}
 
   ngOnInit(): void { 
     //como una promesa
@@ -24,7 +25,11 @@ export class EducationHeaderButtonComponent implements OnInit{
   addEdu(edu : Edu){
     this.eduService.addEdu(edu).subscribe((edu)=>(
       this.edus.push(edu)
+      
     ))
+    console.log("curso creado correctamente!");
+    
+
   }  
 }
 

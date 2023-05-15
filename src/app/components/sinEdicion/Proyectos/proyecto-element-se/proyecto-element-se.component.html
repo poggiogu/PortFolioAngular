@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="row">
+        <app-proyecto-se
+                class="col my-2"
+                *ngFor="let proyecto of proyectos"
+                [proyecto] = "proyecto"
+        ></app-proyecto-se>
+    </div>    
+</div>

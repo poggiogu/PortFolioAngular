@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-
+import { AutenticacionService } from 'src/app/services/autenticacion.service';
 
 @Component({
   selector: 'app-navbar',
@@ -14,10 +14,19 @@ export class NavbarComponent {
   faFacebook = faFacebook;
   faInstagram = faInstagram;
   faGithub = faGithub;
+  
+   
 
-  constructor(){};
+  constructor(
+    public authService: AutenticacionService
+  ){};
 
-  ngOnInit(): void {
+  ngOnInit(): void {    
   };
+
+
+
+
+  
 
 }

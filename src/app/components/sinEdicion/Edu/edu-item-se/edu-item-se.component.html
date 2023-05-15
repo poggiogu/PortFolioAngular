@@ -1,0 +1,22 @@
+<div class="edu-item">   
+    <img [src]="edu.instLogoUrl" style="width:25%; border-radius:5px; margin-right: 15px;" alt="institution logo" >
+    <div class="container-fluid">    
+        <div  class="d-flex justify-content-between">
+            <div class="flex">
+                <h4>
+                    {{edu.course}}
+                </h4>
+            </div>
+        </div>
+        <h6>
+            {{edu.title}}
+        </h6>
+        <p>
+            {{edu.descripcion}}
+        </p>
+        <p>        
+            {{edu.year}}
+        </p>
+        <a title="link al certificado Obtenido" [href]="edu.certificadoUrl" class="text-dark"><b> Certificado </b></a>
+    </div>
+</div>    

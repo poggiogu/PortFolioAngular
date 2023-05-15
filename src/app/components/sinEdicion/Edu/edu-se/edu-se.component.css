@@ -1,0 +1,10 @@
+*{
+    background-color: transparent;
+}
+.container{
+    width:100%;
+    margin: auto;
+    max-width: 800px;
+    min-height: fit-content;
+    padding: 20px;
+}

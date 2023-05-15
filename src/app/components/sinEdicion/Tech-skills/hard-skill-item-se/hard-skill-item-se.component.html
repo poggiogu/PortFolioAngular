@@ -1,0 +1,28 @@
+<div class="container">
+    <circle-progress
+        id="progress-bar"
+        [percent]="+hardSkill.porcentaje"
+        [radius]="80"
+        [space]="-20"
+        [outerStrokeWidth]="20"
+        [innerStrokeWidth]="20"
+        [outerStrokeLinecap]="'square'"
+        [outerStrokeColor]="hardSkill.color"
+        [innerStrokeColor]="'rgb(185, 185, 185)'"
+        [animation]="true"
+        [animationDuration]="300"
+        [showBackground]="true"
+        [backgroundColor]="'transparent'"
+        [showImage]="true"
+        [imageSrc]="hardSkill.imagen"
+        [imageHeight]="100"
+        [imageWidth]="100"
+        [outerStrokeGradient]="true"
+        [outerStrokeGradientStopColor]="'black'"
+    ></circle-progress>
+    <h4>
+        <b>
+            {{hardSkill.titulo}}
+        </b>
+    </h4>
+</div>
